@@ -1,5 +1,7 @@
 package net.mamesosu.Utils;
 
+import com.fasterxml.jackson.databind.JsonNode;
+
 public abstract class Discord {
 
     public static String getModeEmoji(int mode) {
@@ -18,6 +20,30 @@ public abstract class Discord {
             }
             default -> {
                 return null;
+            }
+        }
+    }
+
+    public static String getOnlineEmoji(int userid) {
+        String endpoint = "https://api.mamesosu.net/v1/get_player_status?id=" + userid;
+        JsonNode jsonNode = Data.getJsonNode(endpoint);
+        if(jsonNode.get("player_status").get("online").asBoolean()) {
+            return "<:online:1253033210657509539> ";
+        } else {
+            return "<:offline:1253033236573978767> ";
+        }
+    }
+
+    public static String getStatusEmoji(int status) {
+        switch (status) {
+            case 2, 3, 4 -> {
+                return "<:ranked:1143570271974989914> ";
+            }
+            case 5 -> {
+                return "<:loved:1100846331418914857> ";
+            }
+            default -> {
+                return "<:graveyard:1100846539368316979> ";
             }
         }
     }

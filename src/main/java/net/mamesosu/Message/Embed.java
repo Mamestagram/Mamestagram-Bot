@@ -34,25 +34,26 @@ public abstract class Embed {
                 result = ps.executeQuery();
                 if(result.next()) {
                     String title = Discord.getModeEmoji(i) + " **" + Bancho.getModeToString(i);
-                    String field = ":flag_" + result.getString("country") + ": **" + result.getString("name") + "** | ";
+                    String field = Discord.getOnlineEmoji(result.getInt("id"))  +  ":flag_" + result.getString("country") + ": **" + result.getString("name") + "** | ";
 
                     ps = connection.prepareStatement("select * from scores s join maps m where s.userid = ? and m.md5 = s.map_md5 and s.mode = ? and m.status in (2, 3) and s.status in (1, 2) order by pp desc limit 1");
                     ps.setInt(1, result.getInt("id"));
                     ps.setInt(2, i);
                     result = ps.executeQuery();
 
-                    if(result.next()) {
+                    if (result.next()) {
                         title += " (" + Numeric.getRoundNumeric(result.getDouble("pp"), 2) + "pp) +" + Bancho.getModsToString(result.getInt("mods")) + "**";
-                        field += "**[" + Moji.getSubString(result.getString("artist")) + " - " + Moji.getSubString(result.getString("title")) +
-                                    " [" + Moji.getSubString(result.getString("version")) + "]](" + Bancho.getWebsiteLink(result.getInt("m.mode"), result.getInt("set_id"), result.getInt("m.id")) +") ** with ** " + Numeric.getRoundNumeric(result.getDouble("acc"), 2) +
-                                    "%** (" + String.format("%,d", result.getInt("score")) + "score)" + "\n" +
-                                    Discord.getRankEmoji(result.getString("grade"))  + " ▸ **" + String.format("%,d", result.getInt("s.max_combo")) + "x** / " + String.format("%,d", result.getInt("m.max_combo")) + "x\n" +
-                                    "__[Replay](https://api.mamesosu.net/v1/get_replay?id=" + result.getInt("id") + ")__";
+                        field += Discord.getStatusEmoji(2) + "**[" + Moji.getSubString(result.getString("artist")) + " - " + Moji.getSubString(result.getString("title")) +
+                                " [" + Moji.getSubString(result.getString("version")) + "]](" + Bancho.getWebsiteLink(result.getInt("m.mode"), result.getInt("set_id"), result.getInt("m.id")) + ") ** with ** " + Numeric.getRoundNumeric(result.getDouble("acc"), 2) +
+                                "%** (" + String.format("%,d", result.getInt("score")) + "score)" + "\n" +
+                                Discord.getRankEmoji(result.getString("grade")) + " ▸ **" + String.format("%,d", result.getInt("s.max_combo")) + "x** / " + String.format("%,d", result.getInt("m.max_combo")) + "x\n" +
+                                "__[Replay](https://api.mamesosu.net/v1/get_replay?id=" + result.getInt("id") + ")__";
 
 
                         if (result.getDouble("pp") > pp) {
                             pp = result.getDouble("pp");
                             eb.setThumbnail("https://a.mamesosu.net/" + result.getInt("userid"));
+                            eb.setImage("https://assets.ppy.sh/beatmaps/" + result.getInt("set_id") + "/covers/cover.jpg");
                         }
                     }
 
@@ -61,7 +62,6 @@ public abstract class Embed {
             }
 
             eb.setColor(Color.YELLOW);
-            eb.setImage("https://img.mamesosu.net/2?4");
             eb.setTimestamp(new Date().toInstant());
 
             connection.close();
