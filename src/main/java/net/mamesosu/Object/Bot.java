@@ -6,6 +6,7 @@ import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.utils.cache.CacheFlag;
+import net.mamesosu.Schedule.Record;
 
 public class Bot {
 
@@ -45,7 +46,7 @@ public class Bot {
                         Activity.listening("Loading all modules..")
                 )
                 .addEventListeners(
-
+                        new Record()
                 )
                 .build();
     }

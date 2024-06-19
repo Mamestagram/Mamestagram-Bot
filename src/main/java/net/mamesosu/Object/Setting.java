@@ -5,6 +5,7 @@ import io.github.cdimascio.dotenv.Dotenv;
 public class Setting {
 
     private final long recordChannel;
+    private final long postChannel;
     private final long guild;
 
     public Setting() {
@@ -13,6 +14,7 @@ public class Setting {
 
         guild = Long.parseLong(dotenv.get("GUILD"));
         recordChannel = Long.parseLong(dotenv.get("SCORE_CHANNEL"));
+        postChannel = Long.parseLong(dotenv.get("POST_CHANNEL"));
     }
 
     public long getGuild() {
@@ -21,5 +23,9 @@ public class Setting {
 
     public long getRecordChannel() {
         return recordChannel;
+    }
+
+    public long getPostChannel() {
+        return postChannel;
     }
 }

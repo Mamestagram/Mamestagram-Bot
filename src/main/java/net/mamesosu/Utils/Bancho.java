@@ -51,7 +51,7 @@ public abstract class Bancho {
             case "vn!taiko" -> {
                 return 1;
             }
-            case "!ctvnb" -> {
+            case "vn!ctb" -> {
                 return 2;
             }
             case "vn!mania" -> {

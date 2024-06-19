@@ -12,6 +12,7 @@ public class DataBase {
     final int port;
     final String user;
     final String password;
+    final String name;
 
     public DataBase() {
         Dotenv dotenv = Dotenv.load();
@@ -19,12 +20,13 @@ public class DataBase {
         port = Integer.parseInt(dotenv.get("PORT"));
         user = dotenv.get("USER");
         password = dotenv.get("PASSWORD");
+        name = dotenv.get("NAME");
     }
 
     public Connection getConnection() {
         try {
             return DriverManager.getConnection(
-                    "jdbc:mysql://localhost/MamestaServer?autoReconnect=true",
+                    "jdbc:mysql://localhost/" + name + "?autoReconnect=true",
                     "mames1basshhii0610",
                     "mamestagrammames1passwordadmin"
             );
