@@ -42,11 +42,11 @@ public abstract class Embed {
                     result = ps.executeQuery();
 
                     if(result.next()) {
-                        title += " (" + result.getInt("pp") + "pp) +" + Bancho.getModsToString(result.getInt("mods")) + "**";
+                        title += " (" + Numeric.getRoundNumeric(result.getDouble("pp"), 2) + "pp) +" + Bancho.getModsToString(result.getInt("mods")) + "**";
                         field += "**[" + Moji.getSubString(result.getString("artist")) + " - " + Moji.getSubString(result.getString("title")) +
                                     " [" + Moji.getSubString(result.getString("version")) + "]](" + Bancho.getWebsiteLink(result.getInt("m.mode"), result.getInt("set_id"), result.getInt("m.id")) +") ** with ** " + Numeric.getRoundNumeric(result.getDouble("acc"), 2) +
                                     "%** (" + String.format("%,d", result.getInt("score")) + "score)" + "\n" +
-                                    Discord.getRankEmoji(result.getString("grade"))  + " ▸ **" + String.format("%,d", result.getInt("s.max_combo")) + "x** / " + result.getInt("m.max_combo") + "x\n" +
+                                    Discord.getRankEmoji(result.getString("grade"))  + " ▸ **" + String.format("%,d", result.getInt("s.max_combo")) + "x** / " + String.format("%,d", result.getInt("m.max_combo")) + "x\n" +
                                     "__[Replay](https://api.mamesosu.net/v1/get_replay?id=" + result.getInt("id") + ")__";
 
 
@@ -60,7 +60,7 @@ public abstract class Embed {
                 }
             }
 
-            eb.setColor(Color.CYAN);
+            eb.setColor(Color.YELLOW);
             eb.setImage("https://img.mamesosu.net/2?4");
             eb.setTimestamp(new Date().toInstant());
 
