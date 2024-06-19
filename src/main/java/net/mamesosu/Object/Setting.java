@@ -6,6 +6,7 @@ public class Setting {
 
     private final long recordChannel;
     private final long postChannel;
+    private final long logChannel;
     private final long guild;
 
     public Setting() {
@@ -13,6 +14,7 @@ public class Setting {
                 .load();
 
         guild = Long.parseLong(dotenv.get("GUILD"));
+        logChannel = Long.parseLong(dotenv.get("LOG_CHANNEL"));
         recordChannel = Long.parseLong(dotenv.get("SCORE_CHANNEL"));
         postChannel = Long.parseLong(dotenv.get("POST_CHANNEL"));
     }
@@ -27,5 +29,9 @@ public class Setting {
 
     public long getPostChannel() {
         return postChannel;
+    }
+
+    public long getLogChannel() {
+        return logChannel;
     }
 }

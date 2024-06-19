@@ -13,12 +13,10 @@ public class Record extends ListenerAdapter {
     public void onMessageReceived(MessageReceivedEvent e) {
 
         if(Main.setting.getGuild() != e.getGuild().getIdLong()) {
-            System.out.println("return 1");
             return;
         }
 
         if(e.getMessage().getChannelIdLong() != Main.setting.getRecordChannel()) {
-            System.out.println("return 2");
             return;
         }
 
