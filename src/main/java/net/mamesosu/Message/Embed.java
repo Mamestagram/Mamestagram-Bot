@@ -423,4 +423,113 @@ public static List<EmbedBuilder> getRuleJAMessage() {
 
         return eb;
     }
+
+    public static List<EmbedBuilder> getDanMessage() {
+
+        List<EmbedBuilder> eb = new ArrayList<>();
+        EmbedBuilder e = new EmbedBuilder();
+
+        e.setTitle("**Dans**");
+        e.addField("**段位とは**", """
+                [段位](https://web.mamesosu.net/documents#dans-en)は、プレイヤーの真の技量を測定することができる多くのゲームで採用されているシステムです。
+                Mamestagramでは、現在**全てのモード**で段位をプレイすることができ、段位を取得することで、他のプレイヤーとの技量を比較することができます。
+                段位のランキングは、[リーダーボード](https://web.mamesosu.net/leaderboard/std/dans)やプロフィールで確認することができます。
+                """, false);
+        e.addField("**段位の取得方法**", """
+                段位を取得するには、[段位マップ](https://web.mamesosu.net/documents#dans-en)をプレイする必要があります。
+                段位マップは、段位を取得するための特別な譜面で、段位マップをプレイすることで段位を取得することができます。
+                """, false);
+        e.addField("**譜面のダウンロード**", """
+                [全てのモードの段位をダウンロードする](https://mega.nz/file/MTcFXKiS#osaecmefYp5BnGRBjeYJu3dAR2aOKKUkTo8BOhJC0XU)
+                <:osu:1100702517119168562> [osu!](https://mega.nz/file/QKsHlLhS#xZfttKbJQqt-2mvT0uD9sIKGJH4VQKf41zXIU_JW81U)
+                <:taiko:1100702510152429588> [Taiko](https://mega.nz/file/1X1FDDqS#QLP5ZjbH8k1FN4IqYJbH_Agq_onXLd66r8UiYxKUDGw)
+                <:fruits:1100702512681599089> [Catch the beat](https://mega.nz/file/BS9CQbzK#pjq5WrFbbpap7G0NA2LYNvNFATyZ1dQDRUseSkTdS-g)
+                <:mania:1100702514501910630> [Mania](https://mega.nz/file/BCMihKRK#oifqLN7kbyf1gw_0_QVN7um_-SJKLw-Vb_-r_pRvJ1I)
+                """, false);
+        e.setImage("https://media.discordapp.net/attachments/945876677358129184/1253368998620434593/2024-03-24_015956.png");
+
+        e.setColor(Color.BLUE);
+        eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle("**Dans**");
+        e.addField("**What are Dans?**", """
+            [Dans](https://web.mamesosu.net/documents#dans-en) is a system adopted in many games to assess a player's skill level.
+            In Mamestagram, you can play for **Dans in all modes**, allowing you to compare your skill level with other players by achieving Dans.
+            Dans rankings can be viewed on the [leaderboards](https://web.mamesosu.net/leaderboard/std/dans) and profiles.
+            """, false);
+                    e.addField("**How to Obtain Dans**", """
+            To obtain Dans, you need to play [Dans maps](https://web.mamesosu.net/documents#dans-en). 
+            Dans maps are special beatmaps designed for obtaining Dans ranks.
+            """, false);
+                    e.addField("**Map Downloads**", """
+            [Download Dans for all modes](https://mega.nz/file/MTcFXKiS#osaecmefYp5BnGRBjeYJu3dAR2aOKKUkTo8BOhJC0XU)
+            <:osu:1100702517119168562> [osu!](https://mega.nz/file/QKsHlLhS#xZfttKbJQqt-2mvT0uD9sIKGJH4VQKf41zXIU_JW81U)
+            <:taiko:1100702510152429588> [Taiko](https://mega.nz/file/1X1FDDqS#QLP5ZjbH8k1FN4IqYJbH_Agq_onXLd66r8UiYxKUDGw)
+            <:fruits:1100702512681599089> [Catch the Beat](https://mega.nz/file/BS9CQbzK#pjq5WrFbbpap7G0NA2LYNvNFATyZ1dQDRUseSkTdS-g)
+            <:mania:1100702514501910630> [Mania](https://mega.nz/file/BCMihKRK#oifqLN7kbyf1gw_0_QVN7um_-SJKLw-Vb_-r_pRvJ1I)
+        """, false);
+
+        e.setImage("https://media.discordapp.net/attachments/945876677358129184/1253368998620434593/2024-03-24_015956.png");
+        e.setColor(Color.BLUE);
+
+        eb.add(e);
+
+        return eb;
+    }
+
+    public static List<EmbedBuilder> getDonateMessage() {
+
+        List<EmbedBuilder> eb = new ArrayList<>();
+        EmbedBuilder e = new EmbedBuilder();
+
+        e.setTitle("**Donate**");
+        e.addField("**知っていますか？**", """
+                1. 私たちは学生です! 毎月多額のサーバーの費用をポケットマネーから出しています。サーバーの維持には、多くの費用がかかります。あなたの寄付がサーバーの維持を助けることができます。
+                2. Mamestagramのウェブサイトでは、一切広告を表示していません。
+                3. Mamestagramで使用しているハードウェアは高性能なものですが、ユーザー数や機能が増えるにつれ、さらにハイエンドなものが必要となってきます。あなたの寄付がサーバーの発展を助けることができます。
+                """, false);
+        e.addField("**寄付方法**", """
+                Mamestagramでは[Kofi](https://ko-fi.com/mames1)と呼ばれる寄付サイト、またはPayPayにて寄付を募っています。
+                Kofiはアカウント登録なしで簡単に寄付を行うことが可能です。
+                メッセージにあなたのユーザー名を記載していくことで、プロフィールページのサポーターバッジとSupporterロールを受け取ることができます!
+                PayPayで支払う場合は https://discord.com/channels/944248031136587796/1171728223407710208 でチケットを作成し、支払いの旨を伝えてください。
+                mames1がQRコードを送信します。
+                """, false);
+        e.addField("**リンク**", """
+                [Kofi](https://ko-fi.com/mames1)
+                [PayPay](https://discord.com/channels/944248031136587796/1171728223407710208)
+                """, false);
+        e.setColor(Color.ORANGE);
+        e.setImage("https://cdn.discordapp.com/attachments/945876677358129184/1253374142544089219/image.png");
+        eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle("**Donate**");
+        e.addField("**Did You Know?**", """
+            1. We are students! We cover the substantial monthly server costs from our own pocket money. Maintaining the server incurs significant expenses. Your donation can help support the server.
+            2. The Mamestagram website does not display any advertisements at all.
+            3. The hardware used for Mamestagram is high-performance, but as the user base and features grow, even more high-end hardware becomes necessary. Your donation can help advance the server.
+            
+            """, false);
+        e.addField("**How to Donate**", """
+            Mamestagram accepts donations via a donation site called [Kofi](https://ko-fi.com/mames1) or through PayPay.
+            Kofi allows easy donations without the need for an account.
+            By including your username in the message, you can receive a supporter badge on your profile page and a supporter role!
+            If you choose to pay with PayPay, please create a ticket at https://discord.com/channels/944248031136587796/1171728223407710208 and inform us about your payment details. mames1 will send you a QR code.
+            """, false);
+
+        e.addField("**Links**", """
+            [Kofi](https://ko-fi.com/mames1)
+            [PayPay](https://discord.com/channels/944248031136587796/1171728223407710208)
+            """, false);
+
+        e.setColor(Color.ORANGE);
+        e.setImage("https://cdn.discordapp.com/attachments/945876677358129184/1253374142544089219/image.png");
+        eb.add(e);
+
+        return eb;
+    }
 }
