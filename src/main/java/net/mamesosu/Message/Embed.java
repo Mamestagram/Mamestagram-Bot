@@ -215,5 +215,22 @@ public static List<EmbedBuilder> getRuleJAMessage() {
         return eb;
     }
 
+    public static EmbedBuilder getRoleMessage() {
+        EmbedBuilder eb = new EmbedBuilder();
 
+        eb.setTitle("By reacting to this message, the following roles can be granted.");
+        eb.addField("**Roles**", """
+                :satellite: Mamestagram Updates
+                <:osu:1100702517119168562> osu!
+                <:taiko:1100702510152429588> Taiko
+                <:fruits:1100702512681599089> Catch the beat
+                <:mania:1100702514501910630> Mania
+                :video_game: Multiplayer
+                :video_camera: Stream Alert
+                """, false);
+
+        eb.setColor(Color.GREEN);
+
+        return eb;
+    }
 }
