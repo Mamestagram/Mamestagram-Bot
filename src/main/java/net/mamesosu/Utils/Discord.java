@@ -28,7 +28,11 @@ public abstract class Discord {
         String endpoint = "https://api.mamesosu.net/v1/get_player_status?id=" + userid;
         JsonNode jsonNode = Data.getJsonNode(endpoint);
         if(jsonNode.get("player_status").get("online").asBoolean()) {
-            return "<:online:1253033210657509539> ";
+            if (jsonNode.get("player_status").get("status").get("action").asInt() != 1) {
+                return "<:online:1253033210657509539> ";
+            } else {
+                return "<:afk:1253149532636844073> ";
+            }
         } else {
             return "<:offline:1253033236573978767> ";
         }
