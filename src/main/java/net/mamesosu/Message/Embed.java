@@ -72,4 +72,104 @@ public abstract class Embed {
 
         return eb;
     }
+
+    public static EmbedBuilder getRuleJAMessage() {
+
+        EmbedBuilder eb = new EmbedBuilder();
+
+        eb.setTitle("**Rule / ルール**");
+        eb.addField("**Welcome to Mamestagram!**",
+                """
+                        この度は、Mamestagramへ参加していただきありがとうございます。
+                        以下のルールはMamestagramで遊ぶ上で必ず守っていただく必要のあるルールです。
+                        ルールはプライベートサーバーとDiscordサーバーの2点が存在します。
+                        どちらも利用する上でかなり重要なものですので、よく読んだ上で参加をお願いします。
+                        ルールを守らない場合、運営は警告なしでアカウントを凍結することがあります
+                        """, false);
+        eb.addField("**Discord Server / Discordサーバー**",
+                """
+                        1. メンバーに迷惑をかける行為 (スパム等や乗っ取りURLの添付など)
+                        2. メンバーの端末に負荷をかけるようなメッセージの送信
+                        3. 差別用語の使用、人種、性別、宗教、信条、門地、同性愛の嫌悪や差別に値するあらゆる行為
+                        4. 節度の超えた暴言を発言する行為
+                        5. 他ユーザーの悪質ななりすまし行為
+                        6. チートやウイルス、自作ソフトウェアなどを配布する行為
+                        7. NSFWコンテンツの発言、添付行為
+                        8. 運営や多数のユーザーが不適切だと判断する行為
+                        """, false);
+        eb.addField("**Private Server / プライベートサーバー**",
+                """
+                        1. サブアカウントを作成する行為 (作成すると自動で制限されます)
+                        2. チートエンジンを使用したプレイを送信する行為
+                        3. ペンタブレットのフィルター機能を利用する行為 (チート検知機能が反応する可能性があります)
+                        4. 不適切なアバター、バナー、自己紹介、ユーザーネームを記載、設定する行為
+                        5. 差別用語の使用、人種、性別、宗教、信条、門地、同性愛の嫌悪や差別に値するあらゆる行為
+                        6. 他ユーザーへの悪質ななりすまし行為
+                        7. サーバーに対して不必要な計算を行わせるような行為
+                        8. 運営や多数のユーザーが不適切だと判断する行為
+                        """, false);
+
+        eb.addField("**申告について**", """
+                もし不正行為を目撃、発見した場合、運営に https://discord.com/channels/944248031136587796/1171728223407710208 にて報告をしてください。
+                \n__**虚偽の申告はアカウントの制限対象になります**__ \n
+                """, false);
+
+        eb.addField("**異議申し立てについて**", """
+                もし運営の対応に異議がある場合は、運営に https://discord.com/channels/944248031136587796/1171728223407710208 にて報告をしてください。
+                """, false);
+
+        eb.setColor(Color.CYAN);
+
+        return eb;
+    }
+
+    public static EmbedBuilder getRuleEnMessage() {
+
+        EmbedBuilder eb = new EmbedBuilder();
+
+        eb.setTitle("**Rule**");
+        eb.addField("**Welcome to Mamestagram!**",
+                """
+                        Thank you for joining Mamestagram.
+                        The following rules are rules that you must follow when playing on Mamestagram.
+                        There are two sets of rules, one for the private server and the other for the Discord server.
+                        Both are quite important to use, so please read them carefully before participating.
+                        If you do not follow the rules, the management may freeze your account without warning!
+                        """, false);
+        eb.addField("**Discord Server**",
+                """
+                        1. Behavior that may cause inconvenience to members (e.g., spamming, attaching hijacked URLs, etc.)
+                        2. sending messages that overload members' terminals
+                        3. using discriminatory terms, or any actions that are hateful or discriminatory in terms of race, gender, religion, creed, family origin, or homosexuality
+                        4. any act of speaking out of turn in an abusive manner
+                        5. malicious impersonation of other users
+                        6. distribution of cheats, viruses, home-made software, etc.
+                        7. speaking or attaching NSFW contents
+                        8. acts that are deemed inappropriate by the management or many users
+                        """, false);
+        eb.addField("**Private Server**",
+                """
+                        1. creating a sub-account (automatic restriction upon creation)
+                        2. sending a play that uses the cheat engine.
+                        3. using the filter function of the pen tablet (the cheat detection function may react)
+                        4. uploading or setting up inappropriate avatars, banners, self-introductions, or usernames
+                        5. use of discriminatory terms, or any actions that are hateful or discriminatory in terms of race, gender, religion, creed, family origin, or homosexuality
+                        6. malicious impersonation of another user
+                        7. any action that causes the server to perform unnecessary calculations
+                        8. any action that is deemed inappropriate by the management or by many users.
+                        """, false);
+
+        eb.addField("**About Declarations**", """
+                If you witness or discover any fraudulent activity, please report it to the management at https://discord.com/channels/944248031136587796/1171728223407710208.
+                __**False reports will result in account restrictions**__. \n
+                """, false);
+
+        eb.addField("**Regarding objections**", """
+                If you disagree with the management's response, please report it to the management at https://discord.com/channels/944248031136587796/1171728223407710208.
+                """, false);
+
+        eb.setColor(Color.CYAN);
+
+        return eb;
+    }
 }

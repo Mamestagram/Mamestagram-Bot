@@ -8,6 +8,7 @@ import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.utils.cache.CacheFlag;
 import net.mamesosu.Schedule.ActivePlayer;
 import net.mamesosu.Schedule.Record;
+import net.mamesosu.Server.Setup;
 
 public class Bot {
 
@@ -48,7 +49,8 @@ public class Bot {
                 )
                 .addEventListeners(
                         new Record(),
-                        new ActivePlayer()
+                        new ActivePlayer(),
+                        new Setup()
                 )
                 .build();
     }
