@@ -86,8 +86,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
                 """
                         この度は、Mamestagramへ参加していただきありがとうございます。
                         以下のルールはMamestagramで遊ぶ上で必ず守っていただく必要のあるルールです。
-                        ルールはプライベートサーバーとDiscordサーバーの2点が存在します。
-                        どちらも利用する上でかなり重要なものですので、よく読んだ上で参加をお願いします。
+                        ルールはプライベートサーバーとDiscordサーバーの2点が存在します。どちらも利用する上でかなり重要なものですので、よく読んだ上で参加をお願いします。
                         ルールを守らない場合、運営は警告なしでアカウントを凍結することがあります
                         """, false);
 
@@ -157,7 +156,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
                 """
                         Thank you for joining Mamestagram. The following rules are rules that you must follow when playing on Mamestagram.
                         There are two sets of rules, one for the private server and the other for the Discord server. Both are quite important to use, so please read them carefully before participating.
-                        If you do not follow the rules, the management may restrict/ban your account without warning!
+                        If you do not follow the rules, moderator may restrict/ban your account without warning!
                         """, false);
 
         e.setColor(Color.CYAN);
@@ -166,14 +165,14 @@ public static List<EmbedBuilder> getRuleJAMessage() {
 
         e.addField("**Prohibited acts on the Discord**",
                 """
-                        1. Behavior that may cause inconvenience to members (e.g., spamming, attaching hijacked URLs, etc.)
+                        1. Behavior that may cause inconvenience to members (e.g., spamming, attaching hacked URLs, etc.)
                         2. sending messages that overload members' terminals
                         3. using discriminatory terms, or any actions that are hateful or discriminatory in terms of race, gender, religion, creed, family origin, or homosexuality
                         4. any act of speaking out of turn in an abusive manner
                         5. malicious impersonation of other users
                         6. distribution of cheats, viruses, home-made software, etc.
                         7. speaking or attaching NSFW contents
-                        8. acts that are deemed inappropriate by the management or many users
+                        8. acts that are deemed inappropriate by moderator or many users
                         """, false);
 
         e.setColor(Color.CYAN);
