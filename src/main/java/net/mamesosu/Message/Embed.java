@@ -188,7 +188,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
                         5. use of discriminatory terms, or any actions that are hateful or discriminatory in terms of race, gender, religion, creed, family origin, or homosexuality
                         6. malicious impersonation of another user
                         7. any action that causes the server to perform unnecessary calculations
-                        8. any action that is deemed inappropriate by the management or by many users.
+                        8. any action that is deemed inappropriate by moderator or by many users.
                         """, false);
 
         e.setColor(Color.CYAN);
@@ -229,6 +229,129 @@ public static List<EmbedBuilder> getRuleJAMessage() {
                 """, false);
 
         eb.setColor(Color.GREEN);
+
+        return eb;
+    }
+
+    public static List<EmbedBuilder> getCommandMessage() {
+
+        List<EmbedBuilder> eb = new ArrayList<>();
+        EmbedBuilder e = new EmbedBuilder();
+
+        e.setTitle("**Mamestagramのコマンドリスト**");
+        e.setDescription("サーバー内のBot、**Momiji** に以下のコマンドを送信することで、よりMamestagramを快適にプレイできます");
+        e.addField("**プロフィールの設定**",
+                """
+                      ``!changecountry`` あなたのアカウントの国を変更することができます
+                      ``!changename <名前>`` あなたの名前を変更します
+                      """ , false);
+        e.addField("**段位の設定**", """
+                        
+                      ``!danprefix <edit/list> <段位のid>`` リーダーボードに表示する段位の種類を変更できます (osu!maniaのみ利用可能です)
+                      ``!danprofile <on/off>`` 段位を本格的にプレイしたい方向けのモードに切り替えます。全譜面を0PPでプレイすることが可能です
+                      """, false);
+        e.addField("**フレンドとゴール**","""
+                      ``!friends`` フレンドリストを表示します
+                      ``!goals`` 譜面や任意のモードのゴールを設定することができます。(プレイが終わるたびに進捗が表示されます)
+                      """, false);
+        e.addField("**リーダーボードの設定**", """
+                      ``!leaderboard dan <on/off>`` リーダーボードの段位表示を切り替えます
+                      ``!leaderboard sort <score/pp/default>`` リーダーボードの順位順を変更します
+                """, false);
+        e.addField("**ライバルの設定**", """
+                      ``!rival <add/remove> <userid か プレイヤー名>`` あなたのライバルを設定します (そのライバルにスコアをスナイプされるとあなたに通知が送信されます)
+                      ``!rival <msg> <メッセージ>`` あなたをライバルに設定したプレイヤーへのメッセージを変更します
+                      """, false);
+        e.addField("**通知の設定**", """
+                      ``!scorenotice <on/off>`` 順位やPPを表示する通知表示を切り替えます (Banchoではデフォルトでオフです)
+                      ``!snipe <on/off>`` 1位を誰かに奪われた時にあなたに通知を送信するのかを切り替えます
+                      """, false);
+        e.addField("**譜面の設定**", """
+                      ``!unsub <rank/unrank>`` Banchoに投稿されていない譜面をLovedに更新します (NotSubmittedの譜面を更新できます)
+                      ``!update`` ランキングが利用できない譜面を修正します
+                      """, false);
+        e.addField("**PP計算**", """
+                      ``!with +<mod(なくても良い)> <acc(なくても良い)>`` 指定された条件でのPPを計算し、表示します
+                      """, false);
+        e.addField("**クランのコマンドリスト**",
+                """
+                      ``!clan help`` クランコマンドのヘルプを表示します
+                      ``!clan create <tag> <name>`` 新しいクランを作成します
+                      ``!clan edit <tag / name>`` クランの名前やタグの名前を変更します
+                      ``!clan disband`` クランを解散します
+                      ``!clan info`` クラン情報を表示します
+                      ``!clan leave`` クランから脱退します
+                      ``!clan public <on/off>`` クランの公開設定を変更します (クランを招待制にすることができます)
+                      ``!clan pending`` あなたのクランに参加申請しているプレイヤーを表示します
+                      ``!clan accept <ユーザーID>`` 指定されたユーザーIDのクランへの参加を許可します
+                      ``!clan kick <ユーザーID>`` あなたのクランから指定されたプレイヤーを追放します (クランの管理者のみ利用可能です)
+                      """, false);
+        e.addField("**マルチプレイのコマンドリスト (カスタムコマンドのみ)**",
+                "``!mp r <on/off>`` プレイが終わるたびにクランのホストを上から下にローテーションさせます", false);
+        e.setColor(Color.YELLOW);
+        eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle("**Mamestagram 's command list**");
+        e.setDescription("By sending the following command to the bot, **Momiji**, in the server, you can enjoy playing Mamestagram more comfortably!");
+
+        e.addField("**Change your profile settings**",
+                """
+                ``!changecountry`` Change the country of your account
+                ``!changename <name>`` Change your name""", false);
+        e.addField("**Change your Dan settings**",
+                """
+                ``!danprefix <edit/list> <Dan ID>`` Change the type of Dan displayed on the leaderboard (available only for osu!mania)
+                ``!danprofile <on/off>`` Switch to a mode for serious Dan players. You can play all maps with 0PP.
+                """, false);
+        e.addField("**Friends and Goals**",
+                """
+                ``!friends`` Display your friends list
+                ``!goals`` Set goals for maps or any mode (progress is shown after each play)
+                """, false);
+        e.addField("**Leaderboard settings**",
+                """
+                ``!leaderboard dan <on/off>`` Toggle Dan display on the leaderboard
+                ``!leaderboard sort <score/pp/default>`` Change the leaderboard ranking order
+                """, false);
+        e.addField("**Rival settings**",
+                """
+                ``!rival <add/remove> <userid or player name>`` Set your rival (you will be notified if your score is sniped by the rival)
+                ``!rival <msg> <message>`` Change the message to players who have set you as their rival
+                """, false);
+        e.addField("**Notification settings**",
+                """
+                ``!scorenotice <on/off>`` Toggle notifications for rank and PP display (default is off on Bancho)
+                ``!snipe <on/off>`` Toggle notifications when someone takes the 1st place from you
+                """, false);
+        e.addField("**Map settings**",
+                """
+                ``!unsub <rank/unrank>`` Update maps not posted on Bancho to Loved (you can update NotSubmitted maps)
+                ``!update`` Fix maps that are not available on the ranking
+                """, false);
+        e.addField("**PP Calculation**",
+                """
+                ``!with +<mod (optional)> <acc (optional)>`` Calculate and display PP under specified conditions
+                """, false);
+        e.addField("**List of Clan Commands**",
+                """
+                ``!clan help`` Display help for clan commands
+                ``!clan create <tag> <name>`` Create a new clan
+                ``!clan edit <tag / name>`` Change the clan name or tag name
+                ``!clan disband`` Disband the clan
+                ``!clan info`` Display clan information
+                ``!clan leave`` Leave the clan
+                ``!clan public <on/off>`` Change the clan's public settings (can make the clan invitation-only)
+                ``!clan pending`` Display players who have applied to join your clan
+                ``!clan accept <user ID>`` Accept the specified user ID to join the clan
+                ``!clan kick <user ID>`` Kick the specified player from your clan (available only to clan admins)
+                """, false);
+        e.addField("**List of Multiplayer Commands (Custom Commands Only)**",
+                "``!mp r <on/off>`` Rotate the clan host from top to bottom after each play", false);
+        e.setColor(Color.YELLOW);
+
+        eb.add(e);
 
         return eb;
     }

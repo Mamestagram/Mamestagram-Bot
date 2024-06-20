@@ -36,6 +36,7 @@ public class Setup extends ListenerAdapter {
             List<MessageChannel> channel = new ArrayList<>();
             channel.add(e.getGuild().getTextChannelById(1012666778003976243L));
             channel.add(e.getGuild().getTextChannelById(1253278610735890483L));
+            channel.add(e.getGuild().getTextChannelById(1087987989600280686L));
 
             //delete priv message
             for(MessageChannel c : channel) {
@@ -50,6 +51,10 @@ public class Setup extends ListenerAdapter {
             }
             for (EmbedBuilder eb : Embed.getRuleEnMessage()) {
                 e.getGuild().getTextChannelById(1253278610735890483L).sendMessageEmbeds(eb.build()).queue();
+            }
+
+            for(EmbedBuilder eb : Embed.getCommandMessage()) {
+                e.getGuild().getTextChannelById(1087987989600280686L).sendMessageEmbeds(eb.build()).queue();
             }
         }
     }
