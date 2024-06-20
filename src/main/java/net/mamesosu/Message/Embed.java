@@ -91,6 +91,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
                         """, false);
 
         e.setColor(Color.CYAN);
+        e.setThumbnail("https://media.discordapp.net/attachments/944984741826932767/1253408271004467331/1865_20240206160538.png");
         eb.add(e);
         e = new EmbedBuilder();
 
@@ -161,6 +162,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
                 """, false);
 
         e.setColor(Color.CYAN);
+        e.setThumbnail("https://media.discordapp.net/attachments/944984741826932767/1253408271004467331/1865_20240206160538.png");
         eb.add(e);
         e = new EmbedBuilder();
 
@@ -245,8 +247,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
         e.setDescription("Mamestagramは、今までにない新しいosu!のプライベートサーバーです。Banchoにはない面白い機能を多く取り入れたサーバーを是非お楽しみください！");
         e.addField("**プライベートサーバーとは**", """
                 プライベートサーバーは、osu!の非公式サーバーです。
-                Mamestagramでは、RelaxやAutoPilot、RandomなどのUnranked Modを遊ぶことができ、そのほかにも多くの独自機能が利用可能です。
-                全てのGraveyardマップをLovedマップとして遊ぶことができ、未投稿の譜面をLovedに更新してランキングを争うこともできます。
+                Mamestagramでは、RelaxやAutoPilot、RandomなどのUnranked Modを遊ぶことができ、そのほかにも多くの独自機能が利用可能です。全てのGraveyardマップをLovedマップとして遊ぶことができ、未投稿の譜面をLovedに更新してランキングを争うこともできます。
                 \nいつもと違うosu!で、上位を目指してみませんか？
                 """, false);
         e.addField("**サーバーアドレス**",
@@ -265,17 +266,17 @@ public static List<EmbedBuilder> getRuleJAMessage() {
                 """ , false);
 
         e.setColor(Color.MAGENTA);
+        e.setThumbnail("https://media.discordapp.net/attachments/944984741826932767/1253408271004467331/1865_20240206160538.png");
 
         eb.add(e);
 
         e = new EmbedBuilder();
 
         e.setTitle("Welcome to Mamestagram!");
-
+        e.setDescription("Mamestagram is a brand new private osu! server unlike any other. Enjoy many fun features that are not available on Bancho!");
         e.addField("**What is a Private Server?**", """
                 A private server is an unofficial server for osu!.
-                On Mamestagram, you can play with Unranked Mods like Relax, AutoPilot, and Random, and there are many other unique features available.
-                You can play all Graveyard maps as Loved maps, and you can also update unpublished maps to Loved and compete for rankings.
+                On Mamestagram, you can play with Unranked Mods like Relax, AutoPilot, and Random, and there are many other unique features available. You can play all Graveyard maps as Loved maps, and you can also update unpublished maps to Loved and compete for rankings.
                 \nWhy not aim for the top in a different kind of osu! experience?
                 """, false);
 
@@ -295,6 +296,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
                 """ , false);
 
         e.setColor(Color.MAGENTA);
+        e.setThumbnail("https://media.discordapp.net/attachments/944984741826932767/1253408271004467331/1865_20240206160538.png");
 
         eb.add(e);
 
@@ -357,6 +359,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
         e.addField("**マルチプレイのコマンドリスト (カスタムコマンドのみ)**",
                 "``!mp r <on/off>`` プレイが終わるたびにクランのホストを上から下にローテーションさせます", false);
         e.setColor(Color.YELLOW);
+        e.setThumbnail("https://media.discordapp.net/attachments/944984741826932767/1253408271004467331/1865_20240206160538.png");
         eb.add(e);
 
         e = new EmbedBuilder();
@@ -418,6 +421,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
         e.addField("**List of Multiplayer Commands (Custom Commands Only)**",
                 "``!mp r <on/off>`` Rotate the clan host from top to bottom after each play", false);
         e.setColor(Color.YELLOW);
+        e.setThumbnail("https://media.discordapp.net/attachments/944984741826932767/1253408271004467331/1865_20240206160538.png");
 
         eb.add(e);
 
@@ -449,6 +453,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
         e.setImage("https://media.discordapp.net/attachments/945876677358129184/1253368998620434593/2024-03-24_015956.png");
 
         e.setColor(Color.BLUE);
+        e.setThumbnail("https://media.discordapp.net/attachments/944984741826932767/1253408271004467331/1865_20240206160538.png");
         eb.add(e);
 
         e = new EmbedBuilder();
@@ -472,6 +477,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
         """, false);
 
         e.setImage("https://media.discordapp.net/attachments/945876677358129184/1253368998620434593/2024-03-24_015956.png");
+        e.setThumbnail("https://media.discordapp.net/attachments/944984741826932767/1253408271004467331/1865_20240206160538.png");
         e.setColor(Color.BLUE);
 
         eb.add(e);
@@ -493,8 +499,8 @@ public static List<EmbedBuilder> getRuleJAMessage() {
         e.addField("**寄付方法**", """
                 Mamestagramでは[Kofi](https://ko-fi.com/mames1)と呼ばれる寄付サイト、またはPayPayにて寄付を募っています。
                 Kofiはアカウント登録なしで簡単に寄付を行うことが可能です。
-                \nメッセージにあなたのユーザー名を記載していくことで、プロフィールページのサポーターバッジとSupporterロールを受け取ることができます!
-                PayPayで支払う場合は https://discord.com/channels/944248031136587796/1171728223407710208 でチケットを作成し、支払いの旨を伝えてください。
+                メッセージにあなたのユーザー名を記載していくことで、プロフィールページのサポーターバッジとSupporterロールを受け取ることができます!
+                \nPayPayで支払う場合は https://discord.com/channels/944248031136587796/1171728223407710208 でチケットを作成し、支払いの旨を伝えてください。
                 mames1がQRコードを送信します。
                 """, false);
         e.addField("**リンク**", """
@@ -503,6 +509,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
                 """, false);
         e.setColor(Color.ORANGE);
         e.setImage("https://cdn.discordapp.com/attachments/945876677358129184/1253374142544089219/image.png");
+        e.setThumbnail("https://media.discordapp.net/attachments/944984741826932767/1253408271004467331/1865_20240206160538.png");
         eb.add(e);
 
         e = new EmbedBuilder();
@@ -517,8 +524,8 @@ public static List<EmbedBuilder> getRuleJAMessage() {
         e.addField("**How to Donate**", """
             Mamestagram accepts donations via a donation site called [Kofi](https://ko-fi.com/mames1) or through PayPay.
             Kofi allows easy donations without the need for an account.
-            \nBy including your username in the message, you can receive a supporter badge on your profile page and a supporter role!
-            If you choose to pay with PayPay, please create a ticket at https://discord.com/channels/944248031136587796/1171728223407710208 and inform us about your payment details. mames1 will send you a QR code.
+            By including your username in the message, you can receive a supporter badge on your profile page and a supporter role!
+            \nIf you choose to pay with PayPay, please create a ticket at https://discord.com/channels/944248031136587796/1171728223407710208 and inform us about your payment details. mames1 will send you a QR code.
             """, false);
 
         e.addField("**Links**", """
@@ -528,6 +535,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
 
         e.setColor(Color.ORANGE);
         e.setImage("https://cdn.discordapp.com/attachments/945876677358129184/1253374142544089219/image.png");
+        e.setThumbnail("https://media.discordapp.net/attachments/944984741826932767/1253408271004467331/1865_20240206160538.png");
         eb.add(e);
 
         return eb;
