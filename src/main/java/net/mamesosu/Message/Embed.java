@@ -10,7 +10,9 @@ import net.mamesosu.Utils.Numeric;
 
 import java.awt.*;
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public abstract class Embed {
 
@@ -73,12 +75,14 @@ public abstract class Embed {
         return eb;
     }
 
-    public static EmbedBuilder getRuleJAMessage() {
+public static List<EmbedBuilder> getRuleJAMessage() {
 
-        EmbedBuilder eb = new EmbedBuilder();
+        List<EmbedBuilder> eb = new ArrayList<>();
 
-        eb.setTitle("**Rule / ルール**");
-        eb.addField("**Welcome to Mamestagram!**",
+        EmbedBuilder e = new EmbedBuilder();
+
+        e.setTitle("**Welcome to Mamestagram!**");
+        e.addField("**Rule / ルール**",
                 """
                         この度は、Mamestagramへ参加していただきありがとうございます。
                         以下のルールはMamestagramで遊ぶ上で必ず守っていただく必要のあるルールです。
@@ -86,7 +90,12 @@ public abstract class Embed {
                         どちらも利用する上でかなり重要なものですので、よく読んだ上で参加をお願いします。
                         ルールを守らない場合、運営は警告なしでアカウントを凍結することがあります
                         """, false);
-        eb.addField("**Prohibited acts on the Discord / Discordサーバーの禁止行為**",
+
+        e.setColor(Color.CYAN);
+        eb.add(e);
+        e = new EmbedBuilder();
+
+        e.addField("**Prohibited acts on the Discord / Discordサーバーの禁止行為**",
                 """
                         1. メンバーに迷惑をかける行為 (スパム等や乗っ取りURLの添付など)
                         2. メンバーの端末に負荷をかけるようなメッセージの送信
@@ -97,7 +106,12 @@ public abstract class Embed {
                         7. NSFWコンテンツの発言、添付行為
                         8. 運営や多数のユーザーが不適切だと判断する行為
                         """, false);
-        eb.addField("**Prohibited acts on the Server / プライベートサーバーの禁止行為**",
+
+        e.setColor(Color.CYAN);
+        eb.add(e);
+        e = new EmbedBuilder();
+
+        e.addField("**Prohibited acts on the Server / プライベートサーバーの禁止行為**",
                 """
                         1. サブアカウントを作成する行為 (作成すると自動で制限されます)
                         2. チートエンジンを使用したプレイを送信する行為
@@ -109,32 +123,48 @@ public abstract class Embed {
                         8. 運営や多数のユーザーが不適切だと判断する行為
                         """, false);
 
-        eb.addField("**申告について**", """
+        e.setColor(Color.CYAN);
+        eb.add(e);
+        e = new EmbedBuilder();
+
+        e.addField("**申告について**", """
                 もし不正行為を目撃、発見した場合、運営に https://discord.com/channels/944248031136587796/1171728223407710208 にて報告をしてください。
                 \n__**虚偽の申告はアカウントの制限対象になります**__ \n
                 """, false);
 
-        eb.addField("**異議申し立てについて**", """
+        e.setColor(Color.CYAN);
+        eb.add(e);
+        e = new EmbedBuilder();
+
+        e.addField("**異議申し立てについて**", """
                 もし運営の対応に異議がある場合は、運営に https://discord.com/channels/944248031136587796/1171728223407710208 にて報告をしてください。
                 """, false);
 
-        eb.setColor(Color.CYAN);
+        e.setColor(Color.CYAN);
+        eb.add(e);
 
         return eb;
     }
 
-    public static EmbedBuilder getRuleEnMessage() {
+    public static List<EmbedBuilder> getRuleEnMessage() {
 
-        EmbedBuilder eb = new EmbedBuilder();
+        List<EmbedBuilder> eb = new ArrayList<>();
 
-        eb.setTitle("**Rule**");
-        eb.addField("**Welcome to Mamestagram!**",
+        EmbedBuilder e = new EmbedBuilder();
+
+        e.setTitle("**Welcome to Mamestagram!**");
+        e.addField("**Rule**",
                 """
                         Thank you for joining Mamestagram. The following rules are rules that you must follow when playing on Mamestagram.
                         There are two sets of rules, one for the private server and the other for the Discord server. Both are quite important to use, so please read them carefully before participating.
                         If you do not follow the rules, the management may restrict/ban your account without warning!
                         """, false);
-        eb.addField("**Prohibited acts on the Discord**",
+
+        e.setColor(Color.CYAN);
+        eb.add(e);
+        e = new EmbedBuilder();
+
+        e.addField("**Prohibited acts on the Discord**",
                 """
                         1. Behavior that may cause inconvenience to members (e.g., spamming, attaching hijacked URLs, etc.)
                         2. sending messages that overload members' terminals
@@ -145,7 +175,12 @@ public abstract class Embed {
                         7. speaking or attaching NSFW contents
                         8. acts that are deemed inappropriate by the management or many users
                         """, false);
-        eb.addField("**Prohibited acts on the Server**",
+
+        e.setColor(Color.CYAN);
+        eb.add(e);
+        e = new EmbedBuilder();
+
+        e.addField("**Prohibited acts on the Server**",
                 """
                         1. creating a sub-account (automatic restriction upon creation)
                         2. sending a play that uses the cheat engine.
@@ -157,17 +192,28 @@ public abstract class Embed {
                         8. any action that is deemed inappropriate by the management or by many users.
                         """, false);
 
-        eb.addField("**About Declarations**", """
+        e.setColor(Color.CYAN);
+        eb.add(e);
+        e = new EmbedBuilder();
+
+        e.addField("**About Declarations**", """
                 If you witness or discover any fraudulent activity, please report it to moderator at https://discord.com/channels/944248031136587796/1171728223407710208.
-                __**False reports will result in account restrictions**__. \n
+                \n__**False reports will result in account restrictions**__. \n
                 """, false);
 
-        eb.addField("**Regarding objections**", """
+        e.setColor(Color.CYAN);
+        eb.add(e);
+        e = new EmbedBuilder();
+
+        e.addField("**Regarding objections**", """
                 If you disagree with moderator's decision, please report it to moderator at https://discord.com/channels/944248031136587796/1171728223407710208.
                 """, false);
 
-        eb.setColor(Color.CYAN);
+        e.setColor(Color.CYAN);
+        eb.add(e);
 
         return eb;
     }
+
+
 }
