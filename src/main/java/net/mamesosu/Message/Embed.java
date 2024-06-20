@@ -152,60 +152,63 @@ public static List<EmbedBuilder> getRuleJAMessage() {
         EmbedBuilder e = new EmbedBuilder();
 
         e.setTitle("**Welcome to Mamestagram!**");
-        e.addField("**Rule**",
+        e.addField("Rule",
                 """
-                        Thank you for joining Mamestagram. The following rules are rules that you must follow when playing on Mamestagram.
-                        There are two sets of rules, one for the private server and the other for the Discord server. Both are quite important to use, so please read them carefully before participating.
-                        If you do not follow the rules, moderator may restrict/ban your account without warning!
-                        """, false);
-
-        e.setColor(Color.CYAN);
-        eb.add(e);
-        e = new EmbedBuilder();
-
-        e.addField("**Prohibited acts on the Discord**",
-                """
-                        1. Behavior that may cause inconvenience to members (e.g., spamming, attaching hacked URLs, etc.)
-                        2. sending messages that overload members' terminals
-                        3. using discriminatory terms, or any actions that are hateful or discriminatory in terms of race, gender, religion, creed, family origin, or homosexuality
-                        4. any act of speaking out of turn in an abusive manner
-                        5. malicious impersonation of other users
-                        6. distribution of cheats, viruses, home-made software, etc.
-                        7. speaking or attaching NSFW contents
-                        8. acts that are deemed inappropriate by moderator or many users
-                        """, false);
-
-        e.setColor(Color.CYAN);
-        eb.add(e);
-        e = new EmbedBuilder();
-
-        e.addField("**Prohibited acts on the Server**",
-                """
-                        1. creating a sub-account (automatic restriction upon creation)
-                        2. sending a play that uses the cheat engine.
-                        3. using the filter function of the pen tablet (the cheat detection function may react)
-                        4. uploading or setting up inappropriate avatars, banners, self-introductions, or usernames
-                        5. use of discriminatory terms, or any actions that are hateful or discriminatory in terms of race, gender, religion, creed, family origin, or homosexuality
-                        6. malicious impersonation of another user
-                        7. any action that causes the server to perform unnecessary calculations
-                        8. any action that is deemed inappropriate by moderator or by many users.
-                        """, false);
-
-        e.setColor(Color.CYAN);
-        eb.add(e);
-        e = new EmbedBuilder();
-
-        e.addField("**About Declarations**", """
-                If you witness or discover any fraudulent activity, please report it to moderator at https://discord.com/channels/944248031136587796/1171728223407710208.
-                \n__**False reports will result in account restrictions**__. \n
+                Thank you for joining Mamestagram.
+                The following rules must be strictly followed while using Mamestagram.
+                There are rules for both the private server and the Discord server. It is crucial to read and understand these rules before participating.
+                If the rules are not followed, the administration reserves the right to suspend accounts without warning.
                 """, false);
 
         e.setColor(Color.CYAN);
         eb.add(e);
         e = new EmbedBuilder();
 
-        e.addField("**Regarding objections**", """
-                If you disagree with moderator's decision, please report it to moderator at https://discord.com/channels/944248031136587796/1171728223407710208.
+        e.addField("Prohibited Acts on the Discord",
+                """
+                1. Acts that cause inconvenience to members (such as spam or posting phishing URLs)
+                2. Sending messages that put a load on members' devices
+                3. Use of discriminatory language or any acts that amount to hatred or discrimination based on race, gender, religion, creed, social status, or sexual orientation
+                4. Making excessively abusive remarks
+                5. Malicious impersonation of other users
+                6. Distributing cheats, viruses, or self-made software
+                7. Posting or attaching NSFW content
+                8. Any act deemed inappropriate by the administration or a large number of users
+                """, false);
+
+        e.setColor(Color.CYAN);
+        eb.add(e);
+        e = new EmbedBuilder();
+
+        e.addField("**Prohibited Acts on the Server**",
+                """
+                        1. Creating alternate accounts (creating them will result in automatic restrictions)
+                        2. Broadcasting gameplay using cheat engines
+                        3. Using tablet filter functions (may trigger cheat detection systems)
+                        4. Using inappropriate avatars, banners, self-introductions, or usernames
+                        5. Use of discriminatory language or any acts that amount to hatred or discrimination based on race, gender, religion, creed, social status, or sexual orientation
+                        6. Malicious impersonation of other users
+                        7. Performing unnecessary computations on the server
+                        8. Any act deemed inappropriate by the administration or a large number of users
+                        """, false);
+
+
+        e.setColor(Color.CYAN);
+        eb.add(e);
+        e = new EmbedBuilder();
+
+        e.addField("**Reporting Procedures**", """
+                If you witness or discover any misconduct, please report it to the administration at https://discord.com/channels/944248031136587796/1171728223407710208.
+                \n__**False reporting may result in account restrictions.**__ \n
+                """, false);
+
+
+        e.setColor(Color.CYAN);
+        eb.add(e);
+        e = new EmbedBuilder();
+
+        e.addField("**Appeals Process**", """
+                If you disagree with the administration's response, please report it to the administration at https://discord.com/channels/944248031136587796/1171728223407710208.
                 """, false);
 
         e.setColor(Color.CYAN);
@@ -229,6 +232,71 @@ public static List<EmbedBuilder> getRuleJAMessage() {
                 """, false);
 
         eb.setColor(Color.GREEN);
+
+        return eb;
+    }
+
+    public static List<EmbedBuilder> getAboutMessage() {
+
+        List<EmbedBuilder> eb = new ArrayList<>();
+        EmbedBuilder e = new EmbedBuilder();
+
+        e.setTitle("**Mamestagramへようこそ！**");
+        e.setDescription("Mamestagramは、今までにない新しいosu!のプライベートサーバーです。Banchoにはない面白い機能を多く取り入れたサーバーを是非お楽しみください！");
+        e.addField("**プライベートサーバーとは**", """
+                プライベートサーバーは、osu!の非公式サーバーです。
+                Mamestagramでは、RelaxやAutoPilot、RandomなどのUnranked Modを遊ぶことができ、そのほかにも多くの独自機能が利用可能です。
+                全てのGraveyardマップをLovedマップとして遊ぶことができ、未投稿の譜面をLovedに更新してランキングを争うこともできます。
+                いつもと違うosu!で、上位を目指してみませんか？
+                """, false);
+        e.addField("**サーバーアドレス**",
+                """
+                      ```mamesosu.net```
+                      接続方法は [こちら](https://web.mamesosu.net/documents#connection-en) をご覧ください。
+                      """, false);
+        e.addField("**アカウント登録**", """
+                よく間違える方がいますが... **Banchoのアカウントでログインすることはできません!!**
+                [ここから](https://web.mamesosu.net/register)アカウントを登録してください。
+                \n※osu!から登録を行うことはできません!
+                """, false);
+
+        e.addField("**YouTube**", """
+                [Mamestagram YouTube](https://www.youtube.com/@Mamestagram)
+                """ , false);
+
+        e.setColor(Color.MAGENTA);
+
+        eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle("Welcome to Mamestagram!");
+
+        e.addField("**What is a Private Server?**", """
+                A private server is an unofficial server for osu!.
+                On Mamestagram, you can play with Unranked Mods like Relax, AutoPilot, and Random, and there are many other unique features available.
+                You can play all Graveyard maps as Loved maps, and you can also update unpublished maps to Loved and compete for rankings.
+                Why not aim for the top in a different kind of osu! experience?
+                """, false);
+
+        e.addField("**Server Address**",
+                """
+                      ```mamesosu.net```
+                      For connection instructions, please see [here](https://web.mamesosu.net/documents#connection-en).
+                      """, false);
+        e.addField("**Account Registration**", """
+                Many people make this mistake... **You cannot log in with your Bancho account!!**
+                Please register an account [here](https://web.mamesosu.net/register).
+                \n*You cannot register from osu!
+                """, false);
+
+        e.addField("**YouTube**", """
+                [Mamestagram YouTube](https://www.youtube.com/@Mamestagram)
+                """ , false);
+
+        e.setColor(Color.MAGENTA);
+
+        eb.add(e);
 
         return eb;
     }
