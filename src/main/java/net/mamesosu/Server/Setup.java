@@ -35,12 +35,12 @@ public class Setup extends ListenerAdapter {
 
             List<MessageChannel> channel = new ArrayList<>();
 
-            /*
+
             channel.add(e.getGuild().getTextChannelById(1073989576462438420L));
             channel.add(e.getGuild().getTextChannelById(1012666778003976243L));
             channel.add(e.getGuild().getTextChannelById(1253278610735890483L));
-            channel.add(e.getGuild().getTextChannelById(1087987989600280686L));*/
-
+            channel.add(e.getGuild().getTextChannelById(1087987989600280686L));
+            channel.add(e.getGuild().getTextChannelById(1175719230650449940L));
             channel.add(e.getGuild().getTextChannelById(1171766574588370944L));
 
 
@@ -52,20 +52,24 @@ public class Setup extends ListenerAdapter {
                 }
             }
 
-            /*for (EmbedBuilder eb : Embed.getRuleJAMessage()) {
+            for (EmbedBuilder eb : Embed.getRuleJAMessage()) {
                 e.getGuild().getTextChannelById(1012666778003976243L).sendMessageEmbeds(eb.build()).queue();
             }
             for (EmbedBuilder eb : Embed.getRuleEnMessage()) {
                 e.getGuild().getTextChannelById(1253278610735890483L).sendMessageEmbeds(eb.build()).queue();
-            }*/
+            }
 
-            /*for(EmbedBuilder eb : Embed.getCommandMessage()) {
+            for(EmbedBuilder eb : Embed.getCommandMessage()) {
                 e.getGuild().getTextChannelById(1087987989600280686L).sendMessageEmbeds(eb.build()).queue();
-            }*/
+            }
 
-            /*for(EmbedBuilder eb : Embed.getAboutMessage()) {
+            for (EmbedBuilder eb : Embed.getDanMessage()) {
+                e.getGuild().getTextChannelById(1175719230650449940L).sendMessageEmbeds(eb.build()).queue();
+            }
+
+            for(EmbedBuilder eb : Embed.getAboutMessage()) {
                 e.getGuild().getTextChannelById(1073989576462438420L).sendMessageEmbeds(eb.build()).queue();
-            }*/
+            }
 
             for(EmbedBuilder eb : Embed.getDonateMessage()) {
                 e.getGuild().getTextChannelById(1171766574588370944L).sendMessageEmbeds(eb.build()).queue();

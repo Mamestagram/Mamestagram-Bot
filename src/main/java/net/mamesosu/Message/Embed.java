@@ -247,7 +247,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
                 プライベートサーバーは、osu!の非公式サーバーです。
                 Mamestagramでは、RelaxやAutoPilot、RandomなどのUnranked Modを遊ぶことができ、そのほかにも多くの独自機能が利用可能です。
                 全てのGraveyardマップをLovedマップとして遊ぶことができ、未投稿の譜面をLovedに更新してランキングを争うこともできます。
-                いつもと違うosu!で、上位を目指してみませんか？
+                \nいつもと違うosu!で、上位を目指してみませんか？
                 """, false);
         e.addField("**サーバーアドレス**",
                 """
@@ -276,7 +276,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
                 A private server is an unofficial server for osu!.
                 On Mamestagram, you can play with Unranked Mods like Relax, AutoPilot, and Random, and there are many other unique features available.
                 You can play all Graveyard maps as Loved maps, and you can also update unpublished maps to Loved and compete for rankings.
-                Why not aim for the top in a different kind of osu! experience?
+                \nWhy not aim for the top in a different kind of osu! experience?
                 """, false);
 
         e.addField("**Server Address**",
@@ -433,7 +433,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
         e.addField("**段位とは**", """
                 [段位](https://web.mamesosu.net/documents#dans-en)は、プレイヤーの真の技量を測定することができる多くのゲームで採用されているシステムです。
                 Mamestagramでは、現在**全てのモード**で段位をプレイすることができ、段位を取得することで、他のプレイヤーとの技量を比較することができます。
-                段位のランキングは、[リーダーボード](https://web.mamesosu.net/leaderboard/std/dans)やプロフィールで確認することができます。
+                \n段位のランキングは、[リーダーボード](https://web.mamesosu.net/leaderboard/std/dans)やプロフィールで確認することができます。
                 """, false);
         e.addField("**段位の取得方法**", """
                 段位を取得するには、[段位マップ](https://web.mamesosu.net/documents#dans-en)をプレイする必要があります。
@@ -457,7 +457,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
         e.addField("**What are Dans?**", """
             [Dans](https://web.mamesosu.net/documents#dans-en) is a system adopted in many games to assess a player's skill level.
             In Mamestagram, you can play for **Dans in all modes**, allowing you to compare your skill level with other players by achieving Dans.
-            Dans rankings can be viewed on the [leaderboards](https://web.mamesosu.net/leaderboard/std/dans) and profiles.
+            \nDans rankings can be viewed on the [leaderboards](https://web.mamesosu.net/leaderboard/std/dans) and profiles.
             """, false);
                     e.addField("**How to Obtain Dans**", """
             To obtain Dans, you need to play [Dans maps](https://web.mamesosu.net/documents#dans-en). 
@@ -493,7 +493,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
         e.addField("**寄付方法**", """
                 Mamestagramでは[Kofi](https://ko-fi.com/mames1)と呼ばれる寄付サイト、またはPayPayにて寄付を募っています。
                 Kofiはアカウント登録なしで簡単に寄付を行うことが可能です。
-                メッセージにあなたのユーザー名を記載していくことで、プロフィールページのサポーターバッジとSupporterロールを受け取ることができます!
+                \nメッセージにあなたのユーザー名を記載していくことで、プロフィールページのサポーターバッジとSupporterロールを受け取ることができます!
                 PayPayで支払う場合は https://discord.com/channels/944248031136587796/1171728223407710208 でチケットを作成し、支払いの旨を伝えてください。
                 mames1がQRコードを送信します。
                 """, false);
@@ -517,7 +517,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
         e.addField("**How to Donate**", """
             Mamestagram accepts donations via a donation site called [Kofi](https://ko-fi.com/mames1) or through PayPay.
             Kofi allows easy donations without the need for an account.
-            By including your username in the message, you can receive a supporter badge on your profile page and a supporter role!
+            \nBy including your username in the message, you can receive a supporter badge on your profile page and a supporter role!
             If you choose to pay with PayPay, please create a ticket at https://discord.com/channels/944248031136587796/1171728223407710208 and inform us about your payment details. mames1 will send you a QR code.
             """, false);
 
