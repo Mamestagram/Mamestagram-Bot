@@ -86,7 +86,7 @@ public abstract class Embed {
                         どちらも利用する上でかなり重要なものですので、よく読んだ上で参加をお願いします。
                         ルールを守らない場合、運営は警告なしでアカウントを凍結することがあります
                         """, false);
-        eb.addField("**Discord Server / Discordサーバー**",
+        eb.addField("**Prohibited acts on the Discord / Discordサーバーの禁止行為**",
                 """
                         1. メンバーに迷惑をかける行為 (スパム等や乗っ取りURLの添付など)
                         2. メンバーの端末に負荷をかけるようなメッセージの送信
@@ -97,7 +97,7 @@ public abstract class Embed {
                         7. NSFWコンテンツの発言、添付行為
                         8. 運営や多数のユーザーが不適切だと判断する行為
                         """, false);
-        eb.addField("**Private Server / プライベートサーバー**",
+        eb.addField("**Prohibited acts on the Server / プライベートサーバーの禁止行為**",
                 """
                         1. サブアカウントを作成する行為 (作成すると自動で制限されます)
                         2. チートエンジンを使用したプレイを送信する行為
@@ -130,13 +130,11 @@ public abstract class Embed {
         eb.setTitle("**Rule**");
         eb.addField("**Welcome to Mamestagram!**",
                 """
-                        Thank you for joining Mamestagram.
-                        The following rules are rules that you must follow when playing on Mamestagram.
-                        There are two sets of rules, one for the private server and the other for the Discord server.
-                        Both are quite important to use, so please read them carefully before participating.
-                        If you do not follow the rules, the management may freeze your account without warning!
+                        Thank you for joining Mamestagram. The following rules are rules that you must follow when playing on Mamestagram.
+                        There are two sets of rules, one for the private server and the other for the Discord server. Both are quite important to use, so please read them carefully before participating.
+                        If you do not follow the rules, the management may restrict/ban your account without warning!
                         """, false);
-        eb.addField("**Discord Server**",
+        eb.addField("**Prohibited acts on the Discord**",
                 """
                         1. Behavior that may cause inconvenience to members (e.g., spamming, attaching hijacked URLs, etc.)
                         2. sending messages that overload members' terminals
@@ -147,7 +145,7 @@ public abstract class Embed {
                         7. speaking or attaching NSFW contents
                         8. acts that are deemed inappropriate by the management or many users
                         """, false);
-        eb.addField("**Private Server**",
+        eb.addField("**Prohibited acts on the Server**",
                 """
                         1. creating a sub-account (automatic restriction upon creation)
                         2. sending a play that uses the cheat engine.
@@ -160,12 +158,12 @@ public abstract class Embed {
                         """, false);
 
         eb.addField("**About Declarations**", """
-                If you witness or discover any fraudulent activity, please report it to the management at https://discord.com/channels/944248031136587796/1171728223407710208.
+                If you witness or discover any fraudulent activity, please report it to moderator at https://discord.com/channels/944248031136587796/1171728223407710208.
                 __**False reports will result in account restrictions**__. \n
                 """, false);
 
         eb.addField("**Regarding objections**", """
-                If you disagree with the management's response, please report it to the management at https://discord.com/channels/944248031136587796/1171728223407710208.
+                If you disagree with moderator's decision, please report it to moderator at https://discord.com/channels/944248031136587796/1171728223407710208.
                 """, false);
 
         eb.setColor(Color.CYAN);
