@@ -275,7 +275,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
 
         e = new EmbedBuilder();
 
-        e.setTitle(":lock: Can I use my Bancho account on Mamestagram?");
+        e.setTitle(":lock: **Can I use my Bancho account on Mamestagram?**");
         e.setDescription("No, you cannot. Mamestagram requires a separate account to be created and under no circumstance will request access to your Bancho account.");
         e.setColor(Color.CYAN);
 
@@ -291,7 +291,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
 
         e = new EmbedBuilder();
 
-        e.setTitle(":warning: How can I appeal my restriction? ");
+        e.setTitle(":warning: **How can I appeal my restriction?**");
         e.setDescription("Please report it to the administration at https://discord.com/channels/944248031136587796/1171728223407710208");
         e.setColor(Color.CYAN);
 
@@ -502,53 +502,82 @@ public static List<EmbedBuilder> getRuleJAMessage() {
         List<EmbedBuilder> eb = new ArrayList<>();
         EmbedBuilder e = new EmbedBuilder();
 
-        e.setTitle("**Donate**");
-        e.addField("**知っていますか？**", """
-                * 私たちは学生です! 毎月多額のサーバーの費用をポケットマネーから出しています。サーバーの維持には、多くの費用がかかります。あなたの寄付がサーバーの維持を助けることができます。
+        e.setTitle(":pushpin: **知っていますか？**");
+        e.addField(":student: **私たちは学生です!**", """
+                * 毎月多額のサーバーの費用をポケットマネーから出しています。サーバーの維持には、多くの費用がかかります。あなたの寄付がサーバーの維持を助けることができます。
+                """, false);
+        e.addField(":earth_asia: **快適なウェブサイトを提供**", """
                 * Mamestagramのウェブサイトでは、一切広告を表示していません。
-                * Mamestagramで使用しているハードウェアは高性能なものですが、ユーザー数や機能が増えるにつれ、さらにハイエンドなものが必要となってきます。あなたの寄付がサーバーの発展を助けることができます。
                 """, false);
-        e.addField("**寄付方法**", """
-                Mamestagramでは[Kofi](https://ko-fi.com/mames1)と呼ばれる寄付サイト、またはPayPayにて寄付を募っています。
-                \nKofiはアカウント登録なしで簡単に寄付を行うことできるサイトです。
-                \nメッセージにあなたのユーザー名を記載していくことで、プロフィールページのサポーターバッジとSupporterロールを受け取ることができます!
-                \nPayPayで支払う場合は https://discord.com/channels/944248031136587796/1171728223407710208 でチケットを作成し、支払いの旨を伝えてください。
-                mames1がQRコードを送信します。
+        e.addField(":zap: **快適なサービスを提供**", """
+                * Mamestagramで使用しているハードウェアは高性能なものですが、ユーザー数や機能が増えるにつれ、サーバーをアップグレードしています。あなたの寄付がサーバーの発展を助けることができます。
                 """, false);
-        e.addField("**リンク**", """
-                [Kofi](https://ko-fi.com/mames1)
-                [PayPay](https://discord.com/channels/944248031136587796/1171728223407710208)
-                """, false);
+
         e.setColor(Color.ORANGE);
-        e.setImage("https://cdn.discordapp.com/attachments/945876677358129184/1253374142544089219/image.png");
         e.setThumbnail("https://media.discordapp.net/attachments/944984741826932767/1253408271004467331/1865_20240206160538.png");
         eb.add(e);
 
         e = new EmbedBuilder();
 
-        e.setTitle("**Donate**");
-        e.addField("**Did You Know?**", """
-            1. We are students! We cover the substantial monthly server costs from our own pocket money. Maintaining the server incurs significant expenses. Your donation can help support the server.
-            2. The Mamestagram website does not display any advertisements at all.
-            3. The hardware used for Mamestagram is high-performance, but as the user base and features grow, even more high-end hardware becomes necessary. Your donation can help advance the server.
-            
-            """, false);
-        e.addField("**How to Donate**", """
-            Mamestagram accepts donations via a donation site called [Kofi](https://ko-fi.com/mames1) or through PayPay.
-            Kofi allows easy donations without the need for an account.
-            By including your username in the message, you can receive a supporter badge on your profile page and a supporter role!
-            \nIf you choose to pay with PayPay, please create a ticket at https://discord.com/channels/944248031136587796/1171728223407710208 and inform us about your payment details. mames1 will send you a QR code.
-            """, false);
+        e.setTitle(":money_with_wings: **サーバーへの寄付方法**");
 
-        e.addField("**Links**", """
-            [Kofi](https://ko-fi.com/mames1)
-            [PayPay](https://discord.com/channels/944248031136587796/1171728223407710208)
+        e.addField(":bulb: **寄付方法**", """
+                Mamestagramでは[Kofi](https://ko-fi.com/mames1)と呼ばれる寄付サイト、またはPayPayにて寄付を募っています。
+                \n__Kofiはアカウント登録なしで簡単に寄付を行うことできるサイトです。__
+                """, false);
+        e.addField(":zap: **寄付特典**",
+                """
+                      * Websiteのプロフィールページの恒久的なサポーターバッジ
+                      * あなたのアカウントを目立たせるDiscordサポーターロール
+                      \n__必ず寄付を行う時にメッセージ欄にDiscordとMamestagramアカウントの情報を記載してください__
+                      """, false);
+        e.addField(":link: **リンク**", """
+                [Kofi](https://ko-fi.com/mames1)
+                PayPay (以下のQRコードからお願いします)
+                """, false);
+        e.setColor(Color.ORANGE);
+        e.setImage("https://media.discordapp.net/attachments/944984741826932767/1253755792910319667/IMG_2683.png");
+        eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle(":pushpin: **Did You Know?**");
+        e.addField(":student: **We Are Students!**", """
+            * Every month, we pay a large amount of server costs out of our own pockets. Maintaining the server is expensive. Your donation can help us keep the server running.
+            """, false);
+        e.addField(":earth_asia: **Providing a Comfortable Website**", """
+            * We do not display any advertisements on the Mamestagram website.
+            """, false);
+        e.addField(":zap: **Providing a Comfortable Service**", """
+            * The hardware we use for Mamestagram is high-performance, but as the number of users and features increases, we upgrade the server. Your donation can help us improve the server.
             """, false);
 
         e.setColor(Color.ORANGE);
-        e.setImage("https://cdn.discordapp.com/attachments/945876677358129184/1253374142544089219/image.png");
         e.setThumbnail("https://media.discordapp.net/attachments/944984741826932767/1253408271004467331/1865_20240206160538.png");
         eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle(":money_with_wings: **How to Donate to the Server**");
+
+        e.addField(":bulb: **Donation Methods**", """
+            Mamestagram accepts donations via a site called [Kofi](https://ko-fi.com/mames1) or PayPay.
+            \n__Kofi is a site where you can easily make donations without registering an account.__
+            """, false);
+        e.addField(":zap: **Donation Benefits**",
+                """
+                      * Permanent supporter badge on the profile page of the website
+                      * Discord supporter role to make your account stand out
+                      \n__Be sure to include your Discord and Mamestagram account information in the message section when making a donation.__
+                      """, false);
+        e.addField(":link: **Links**", """
+            [Kofi](https://ko-fi.com/mames1)
+            PayPay (please use the QR code below)
+            """, false);
+        e.setColor(Color.ORANGE);
+        e.setImage("https://media.discordapp.net/attachments/944984741826932767/1253755792910319667/IMG_2683.png");
+        eb.add(e);
+
 
         return eb;
     }
