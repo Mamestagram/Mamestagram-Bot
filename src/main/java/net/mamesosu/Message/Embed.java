@@ -445,24 +445,11 @@ public static List<EmbedBuilder> getRuleJAMessage() {
         List<EmbedBuilder> eb = new ArrayList<>();
         EmbedBuilder e = new EmbedBuilder();
 
-        e.setTitle(":musical_keyboard: **Dans**");
-        e.addField(":pushpin: **段位とは**", """
+        e.setTitle(":pushpin: **段位とは**");
+        e.setDescription("""
                 [段位](https://web.mamesosu.net/documents#dans-en)は、プレイヤーの真の技量を測定することができる多くのゲームで採用されているシステムです。
                 \nMamestagramでは、現在**全てのモード**で段位をプレイすることができ、段位を取得することで、他のプレイヤーとの技量を比較することができます。
-                \n段位のランキングは、[リーダーボード](https://web.mamesosu.net/leaderboard/std/dans)やプロフィールで確認することができます。
-                """, false);
-        e.addField(":information_source: **段位の取得方法**", """
-                段位を取得するには、[段位マップ](https://web.mamesosu.net/documents#dans-en)をプレイする必要があります。
-                \n段位マップは、段位を取得するための特別な譜面で、段位マップをプレイすることで段位を取得することができます。
-                """, false);
-        e.addField("<:download:1104222730863263777> **譜面のダウンロード**", """
-                [全てのモードの段位をダウンロードする](https://mega.nz/file/MTcFXKiS#osaecmefYp5BnGRBjeYJu3dAR2aOKKUkTo8BOhJC0XU)
-                <:osu:1100702517119168562> [osu!](https://mega.nz/file/QKsHlLhS#xZfttKbJQqt-2mvT0uD9sIKGJH4VQKf41zXIU_JW81U)
-                <:taiko:1100702510152429588> [Taiko](https://mega.nz/file/1X1FDDqS#QLP5ZjbH8k1FN4IqYJbH_Agq_onXLd66r8UiYxKUDGw)
-                <:fruits:1100702512681599089> [Catch the beat](https://mega.nz/file/BS9CQbzK#pjq5WrFbbpap7G0NA2LYNvNFATyZ1dQDRUseSkTdS-g)
-                <:mania:1100702514501910630> [Mania](https://mega.nz/file/BCMihKRK#oifqLN7kbyf1gw_0_QVN7um_-SJKLw-Vb_-r_pRvJ1I)
-                """, false);
-        e.setImage("https://media.discordapp.net/attachments/945876677358129184/1253368998620434593/2024-03-24_015956.png");
+             """);
 
         e.setColor(Color.BLUE);
         e.setThumbnail("https://media.discordapp.net/attachments/944984741826932767/1253408271004467331/1865_20240206160538.png");
@@ -470,28 +457,80 @@ public static List<EmbedBuilder> getRuleJAMessage() {
 
         e = new EmbedBuilder();
 
-        e.setTitle(":musical_keyboard: **Dans**");
-        e.addField(":pushpin: **What are Dans?**", """
-            [Dans](https://web.mamesosu.net/documents#dans-en) is a system adopted in many games to assess a player's skill level.
-            \nIn Mamestagram, you can play for **Dans in all modes**, allowing you to compare your skill level with other players by achieving Dans.
-            \nDans rankings can be viewed on the [leaderboards](https://web.mamesosu.net/leaderboard/std/dans) and profiles.
-            """, false);
-                    e.addField(":information_source: **How to Obtain Dans**", """
-            To obtain Dans, you need to play [Dans maps](https://web.mamesosu.net/documents#dans-en).
-            \nDans maps are special beatmaps designed for obtaining Dans ranks.
-            """, false);
-                    e.addField("<:download:1104222730863263777> **Map Downloads**", """
-            [Download Dans for all modes](https://mega.nz/file/MTcFXKiS#osaecmefYp5BnGRBjeYJu3dAR2aOKKUkTo8BOhJC0XU)
-            <:osu:1100702517119168562> [osu!](https://mega.nz/file/QKsHlLhS#xZfttKbJQqt-2mvT0uD9sIKGJH4VQKf41zXIU_JW81U)
-            <:taiko:1100702510152429588> [Taiko](https://mega.nz/file/1X1FDDqS#QLP5ZjbH8k1FN4IqYJbH_Agq_onXLd66r8UiYxKUDGw)
-            <:fruits:1100702512681599089> [Catch the Beat](https://mega.nz/file/BS9CQbzK#pjq5WrFbbpap7G0NA2LYNvNFATyZ1dQDRUseSkTdS-g)
-            <:mania:1100702514501910630> [Mania](https://mega.nz/file/BCMihKRK#oifqLN7kbyf1gw_0_QVN7um_-SJKLw-Vb_-r_pRvJ1I)
-        """, false);
-
-        e.setImage("https://media.discordapp.net/attachments/945876677358129184/1253368998620434593/2024-03-24_015956.png");
-        e.setThumbnail("https://media.discordapp.net/attachments/944984741826932767/1253408271004467331/1865_20240206160538.png");
+        e.setTitle(":trophy: **ランキングの確認方法**");
+        e.setDescription("""
+                段位のランキングは、[リーダーボード](https://web.mamesosu.net/leaderboard/std/dans)やプロフィールで確認することができます。
+                """);
         e.setColor(Color.BLUE);
+        eb.add(e);
 
+        e = new EmbedBuilder();
+
+        e.setTitle(":zap: **段位の取得方法**");
+        e.setDescription( """
+                段位を取得するには、[段位マップ](https://web.mamesosu.net/documents#dans-en)をプレイする必要があります。
+                \n**段位マップは、段位を取得するための特別な譜面で、段位マップをプレイすることで段位を取得することができます。**
+                """);
+        e.setColor(Color.BLUE);
+        eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle(":rocket: **譜面のダウンロード**");
+        e.setDescription("""
+                [全てのモードの段位をダウンロードする](https://mega.nz/file/MTcFXKiS#osaecmefYp5BnGRBjeYJu3dAR2aOKKUkTo8BOhJC0XU)
+                <:osu:1100702517119168562> [osu!](https://mega.nz/file/QKsHlLhS#xZfttKbJQqt-2mvT0uD9sIKGJH4VQKf41zXIU_JW81U)
+                <:taiko:1100702510152429588> [Taiko](https://mega.nz/file/1X1FDDqS#QLP5ZjbH8k1FN4IqYJbH_Agq_onXLd66r8UiYxKUDGw)
+                <:fruits:1100702512681599089> [Catch the beat](https://mega.nz/file/BS9CQbzK#pjq5WrFbbpap7G0NA2LYNvNFATyZ1dQDRUseSkTdS-g)
+                <:mania:1100702514501910630> [Mania](https://mega.nz/file/BCMihKRK#oifqLN7kbyf1gw_0_QVN7um_-SJKLw-Vb_-r_pRvJ1I)
+                """);
+        e.setImage("https://media.discordapp.net/attachments/945876677358129184/1253368998620434593/2024-03-24_015956.png");
+        e.setColor(Color.BLUE);
+        eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle(":pushpin: **What is Dan?**");
+        e.setDescription("""
+        [Dan](https://web.mamesosu.net/documents#dans-en) is a system used in many games to measure a player's true skill.
+        \nIn Mamestagram, you can currently play Dan in **all modes**, allowing you to compare your skill level with other players.
+     """);
+
+        e.setColor(Color.BLUE);
+        e.setThumbnail("https://media.discordapp.net/attachments/944984741826932767/1253408271004467331/1865_20240206160538.png");
+        eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle(":trophy: **How to Check the Rankings**");
+        e.setDescription("""
+        You can check the Dan rankings on the [leaderboard](https://web.mamesosu.net/leaderboard/std/dans) or in your profile.
+        """);
+        e.setColor(Color.BLUE);
+        eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle(":zap: **How to Obtain Dan**");
+        e.setDescription("""
+        To obtain Dan, you need to play the [Dan maps](https://web.mamesosu.net/documents#dans-en).
+        \n**Dan maps are special charts used to obtain Dan. By playing Dan maps, you can achieve a Dan rank.**
+        """);
+        e.setColor(Color.BLUE);
+        eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle(":rocket: **Download Maps**");
+        e.setDescription("""
+        [Download all mode Dan maps](https://mega.nz/file/MTcFXKiS#osaecmefYp5BnGRBjeYJu3dAR2aOKKUkTo8BOhJC0XU)
+        <:osu:1100702517119168562> [osu!](https://mega.nz/file/QKsHlLhS#xZfttKbJQqt-2mvT0uD9sIKGJH4VQKf41zXIU_JW81U)
+        <:taiko:1100702510152429588> [Taiko](https://mega.nz/file/1X1FDDqS#QLP5ZjbH8k1FN4IqYJbH_Agq_onXLd66r8UiYxKUDGw)
+        <:fruits:1100702512681599089> [Catch the Beat](https://mega.nz/file/BS9CQbzK#pjq5WrFbbpap7G0NA2LYNvNFATyZ1dQDRUseSkTdS-g)
+        <:mania:1100702514501910630> [Mania](https://mega.nz/file/BCMihKRK#oifqLN7kbyf1gw_0_QVN7um_-SJKLw-Vb_-r_pRvJ1I)
+        """);
+        e.setImage("https://media.discordapp.net/attachments/945876677358129184/1253368998620434593/2024-03-24_015956.png");
+        e.setColor(Color.BLUE);
         eb.add(e);
 
         return eb;

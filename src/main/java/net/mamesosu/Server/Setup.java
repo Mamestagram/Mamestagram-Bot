@@ -41,8 +41,8 @@ public class Setup extends ListenerAdapter {
             //channel.add(e.getGuild().getTextChannelById(1012666778003976243L));
             //channel.add(e.getGuild().getTextChannelById(1253278610735890483L));
             //channel.add(e.getGuild().getTextChannelById(1087987989600280686L));
-            //channel.add(e.getGuild().getTextChannelById(1175719230650449940L));*/
-            channel.add(e.getGuild().getTextChannelById(1171766574588370944L));
+            channel.add(e.getGuild().getTextChannelById(1175719230650449940L));
+            //channel.add(e.getGuild().getTextChannelById(1171766574588370944L));
 
             //map request
             //channel.add(e.getGuild().getTextChannelById(1012678670252523530L));
@@ -66,17 +66,17 @@ public class Setup extends ListenerAdapter {
                 e.getGuild().getTextChannelById(1087987989600280686L).sendMessageEmbeds(eb.build()).queue();
             }*/
 
-            /*for (EmbedBuilder eb : Embed.getDanMessage()) {
+            for (EmbedBuilder eb : Embed.getDanMessage()) {
                 e.getGuild().getTextChannelById(1175719230650449940L).sendMessageEmbeds(eb.build()).queue();
-            }*/
+            }
 
             /*for(EmbedBuilder eb : Embed.getAboutMessage()) {
                 e.getGuild().getTextChannelById(1073989576462438420L).sendMessageEmbeds(eb.build()).queue();
             }*/
 
-            for(EmbedBuilder eb : Embed.getDonateMessage()) {
+            /*for(EmbedBuilder eb : Embed.getDonateMessage()) {
                 e.getGuild().getTextChannelById(1171766574588370944L).sendMessageEmbeds(eb.build()).queue();
-            }
+            }*/
 
             /*e.getGuild().getTextChannelById(1012678670252523530L).sendMessageEmbeds(Embed.getMapRequestMessage().build()).
                     addActionRow(
