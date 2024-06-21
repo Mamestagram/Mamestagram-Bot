@@ -243,62 +243,73 @@ public static List<EmbedBuilder> getRuleJAMessage() {
         List<EmbedBuilder> eb = new ArrayList<>();
         EmbedBuilder e = new EmbedBuilder();
 
-        e.setTitle("**Mamestagramへようこそ！**");
-        e.setDescription("Mamestagramは、今までにない新しいosu!のプライベートサーバーです。Banchoにはない面白い機能を多く取り入れたサーバーを是非お楽しみください！");
-        e.addField(":pushpin: **プライベートサーバーとは**", """
-                プライベートサーバーは、osu!の非公式サーバーです。
-                \nMamestagramでは、RelaxやAutoPilot、RandomなどのUnranked Modを遊ぶことができ、そのほかにも多くの独自機能が利用可能です。
-                \n全てのGraveyardマップをLovedマップとして遊ぶことができ、未投稿の譜面をLovedに更新してランキングを争うこともできます。
-                \nいつもと違うosu!で、上位を目指してみませんか？
-                """, false);
-        e.addField(":safety_pin: **サーバーアドレス**",
-                """
-                      ```mamesosu.net```
-                      接続方法は [こちら](https://web.mamesosu.net/documents#connection-en) をご覧ください。
-                      """, false);
-        e.addField(":gem: **アカウント登録**", """
-                よく間違える方がいますが... **Banchoのアカウントでログインすることはできません!!**
-                \n[ここから](https://web.mamesosu.net/register)アカウントを登録してください。
-                \n**osu!から登録を行うことはできません!!**
-                """, false);
-
-        e.addField(":projector: **YouTube**", """
-                [Mamestagram YouTube](https://www.youtube.com/@Mamestagram)
-                """ , false);
-
-        e.setColor(Color.MAGENTA);
-        e.setThumbnail("https://media.discordapp.net/attachments/944984741826932767/1253408271004467331/1865_20240206160538.png");
+        e.setTitle(":pushpin: **What is Mamestagram?**");
+        e.setDescription("Mamestagram is a brand new private osu! server unlike any other. Enjoy many fun features that are not available on Bancho!");
+        e.setColor(Color.CYAN);
 
         eb.add(e);
 
         e = new EmbedBuilder();
 
-        e.setTitle("Welcome to Mamestagram!");
-        e.setDescription("Mamestagram is a brand new private osu! server unlike any other. Enjoy many fun features that are not available on Bancho!");
-        e.addField(":pushpin: **What is a Private Server?**", """
-                A private server is an unofficial server for osu!.
-                \nOn Mamestagram, you can play with Unranked Mods like Relax, AutoPilot, and Random, and there are many other unique features available. 
-                \nYou can play all Graveyard maps as Loved maps, and you can also update unpublished maps to Loved and compete for rankings.
-                \nWhy not aim for the top in a different kind of osu! experience?
-                """, false);
+        e.setTitle(":eyes: **What is private server?**");
+        e.setDescription("A private osu! server is an unofficial server that allows players to play the game osu! with custom features or modifications that differ from the official osu! servers. Private servers are maintained by individuals or groups and are not affiliated with the creators of the official game.");
+        e.setColor(Color.CYAN);
 
-        e.addField(":safety_pin: **Server Address**",
-                """
-                      ```mamesosu.net```
-                      For connection instructions, please see [here](https://web.mamesosu.net/documents#connection-en).
-                      """, false);
-        e.addField(":gem: **Account Registration**", """
-                Many people make this mistake... **You cannot log in with your Bancho account!!**
-                \nPlease register an account [here](https://web.mamesosu.net/register).
-                \n**You cannot register from client!!**
-                """, false);
+        eb.add(e);
 
-        e.addField(":projector: **YouTube**", """
-                [Mamestagram YouTube](https://www.youtube.com/@Mamestagram)
-                """ , false);
+        e = new EmbedBuilder();
 
-        e.setColor(Color.MAGENTA);
-        e.setThumbnail("https://media.discordapp.net/attachments/944984741826932767/1253408271004467331/1865_20240206160538.png");
+        e.setTitle(":gem: **How to Connect to the Server?**");
+        e.setDescription("Please connect to ``mamesosu.net``. For detailed connection instructions, see [here](https://web.mamesosu.net/documents#connection-en).");
+        e.setColor(Color.CYAN);
+
+        eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle(":musical_keyboard: **How Can I Play the Dan Courses?**");
+        e.setDescription("You can earn titles by playing the specified Dan course maps. For more details, please see https://discord.com/channels/944248031136587796/1175719230650449940");
+        e.setColor(Color.CYAN);
+
+        eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle(":lock: Can I use my Bancho account on Mamestagram?");
+        e.setDescription("No, you cannot. Mamestagram requires a separate account to be created and under no circumstance will request access to your Bancho account.");
+        e.setColor(Color.CYAN);
+
+        eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle(":book: **I Don't Know the Server Commands! Where Can I Find Them?**");
+        e.setDescription("Please see https://discord.com/channels/944248031136587796/1087987989600280686 to learn all the commands.");
+        e.setColor(Color.CYAN);
+
+        eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle(":warning: How can I appeal my restriction? ");
+        e.setDescription("Please report it to the administration at https://discord.com/channels/944248031136587796/1171728223407710208");
+        e.setColor(Color.CYAN);
+
+        eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle(":bug: **How to Report a Bug?**");
+        e.setDescription("If you find a bug, please create a post at https://discord.com/channels/944248031136587796/1117062398596108298, select the appropriate tag, and submit your post.");
+        e.setColor(Color.CYAN);
+
+        eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle(":rocket: **How to Suggest a New Feature?**");
+        e.setDescription("To suggest a new feature, please create a post at https://discord.com/channels/944248031136587796/1200023545015697529!");
+        e.setColor(Color.CYAN);
 
         eb.add(e);
 
@@ -310,104 +321,98 @@ public static List<EmbedBuilder> getRuleJAMessage() {
         List<EmbedBuilder> eb = new ArrayList<>();
         EmbedBuilder e = new EmbedBuilder();
 
-        e.setTitle("**Mamestagramのコマンドリスト**");
-        e.setDescription("サーバー内のBot、**Momiji** に以下のコマンドを送信することで、よりMamestagramを快適にプレイできます");
-        e.addField("**プロフィールの設定**",
+        e.setTitle("**Mamestagram 's command list**");
+        e.setDescription("By sending the following command to the bot, **Momiji**, in the server, you can enjoy playing Mamestagram more comfortably!");
+
+        e.setTitle(":earth_asia: **Change your profile settings**");
+        e.setDescription(
                 """
-                      ``!changecountry`` あなたのアカウントの国を変更することができます
-                      ``!changename <名前>`` あなたの名前を変更します
-                      """ , false);
-        e.addField("**段位の設定**", """
-                        
-                      ``!danprefix <edit/list> <段位のid>`` リーダーボードに表示する段位の種類を変更できます (osu!maniaのみ利用可能です)
-                      ``!danprofile <on/off>`` 段位を本格的にプレイしたい方向けのモードに切り替えます。全譜面を0PPでプレイすることが可能です
-                      """, false);
-        e.addField("**フレンドとゴール**","""
-                      ``!friends`` フレンドリストを表示します
-                      ``!goals`` 譜面や任意のモードのゴールを設定することができます。(プレイが終わるたびに進捗が表示されます)
-                      """, false);
-        e.addField("**リーダーボードの設定**", """
-                      ``!leaderboard dan <on/off>`` リーダーボードの段位表示を切り替えます
-                      ``!leaderboard sort <score/pp/default>`` リーダーボードの順位順を変更します
-                """, false);
-        e.addField(":wrench: **ライバルの設定**", """
-                      ``!rival <add/remove> <userid か プレイヤー名>`` あなたのライバルを設定します (そのライバルにスコアをスナイプされるとあなたに通知が送信されます)
-                      ``!rival <msg> <メッセージ>`` あなたをライバルに設定したプレイヤーへのメッセージを変更します
-                      """, false);
-        e.addField("**通知の設定**", """
-                      ``!scorenotice <on/off>`` 順位やPPを表示する通知表示を切り替えます (Banchoではデフォルトでオフです)
-                      ``!snipe <on/off>`` 1位を誰かに奪われた時にあなたに通知を送信するのかを切り替えます
-                      """, false);
-        e.addField("**譜面の設定**", """
-                      ``!unsub <rank/unrank>`` Banchoに投稿されていない譜面をLovedに更新します (NotSubmittedの譜面を更新できます)
-                      ``!update`` ランキングが利用できない譜面を修正します
-                      """, false);
-        e.addField("**PP計算**", """
-                      ``!with +<mod(なくても良い)> <acc(なくても良い)>`` 指定された条件でのPPを計算し、表示します
-                      """, false);
-        e.addField("**クランのコマンドリスト**",
-                """
-                      ``!clan help`` クランコマンドのヘルプを表示します
-                      ``!clan create <tag> <name>`` 新しいクランを作成します
-                      ``!clan edit <tag / name>`` クランの名前やタグの名前を変更します
-                      ``!clan disband`` クランを解散します
-                      ``!clan info`` クラン情報を表示します
-                      ``!clan leave`` クランから脱退します
-                      ``!clan public <on/off>`` クランの公開設定を変更します (クランを招待制にすることができます)
-                      ``!clan pending`` あなたのクランに参加申請しているプレイヤーを表示します
-                      ``!clan accept <ユーザーID>`` 指定されたユーザーIDのクランへの参加を許可します
-                      ``!clan kick <ユーザーID>`` あなたのクランから指定されたプレイヤーを追放します (クランの管理者のみ利用可能です)
-                      """, false);
-        e.addField("**マルチプレイのコマンドリスト (カスタムコマンドのみ)**",
-                "``!mp r <on/off>`` プレイが終わるたびにクランのホストを上から下にローテーションさせます", false);
-        e.setColor(Color.YELLOW);
-        e.setThumbnail("https://media.discordapp.net/attachments/944984741826932767/1253408271004467331/1865_20240206160538.png");
+                ``!changecountry`` Change the country of your account
+                ``!changename <name>`` Change your name"""
+        );
+        e.setColor(Color.GREEN);
         eb.add(e);
 
         e = new EmbedBuilder();
 
-        e.setTitle("**Mamestagram 's command list**");
-        e.setDescription("By sending the following command to the bot, **Momiji**, in the server, you can enjoy playing Mamestagram more comfortably!");
-
-        e.addField("**Change your profile settings**",
-                """
-                ``!changecountry`` Change the country of your account
-                ``!changename <name>`` Change your name""", false);
-        e.addField("**Change your Dan settings**",
+        e.setTitle(":musical_keyboard: **Change your Dan settings**");
+        e.setDescription(
                 """
                 ``!danprefix <edit/list> <Dan ID>`` Change the type of Dan displayed on the leaderboard (available only for osu!mania)
                 ``!danprofile <on/off>`` Switch to a mode for serious Dan players. You can play all maps with 0PP.
-                """, false);
-        e.addField("**Friends and Goals**",
+                """);
+        e.setColor(Color.GREEN);
+        eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle(":link: **Friends and Goals**");
+        e.setDescription(
                 """
                 ``!friends`` Display your friends list
                 ``!goals`` Set goals for maps or any mode (progress is shown after each play)
-                """, false);
-        e.addField("**Leaderboard settings**",
+                """);
+        e.setColor(Color.GREEN);
+        eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle(":trophy: **Leaderboard settings**");
+        e.setDescription(
                 """
                 ``!leaderboard dan <on/off>`` Toggle Dan display on the leaderboard
                 ``!leaderboard sort <score/pp/default>`` Change the leaderboard ranking order
-                """, false);
-        e.addField("**Rival settings**",
+                """);
+        e.setColor(Color.GREEN);
+        eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle(":zap: **Rival settings**");
+        e.setDescription(
                 """
                 ``!rival <add/remove> <userid or player name>`` Set your rival (you will be notified if your score is sniped by the rival)
                 ``!rival <msg> <message>`` Change the message to players who have set you as their rival
-                """, false);
-        e.addField("**Notification settings**",
+                """);
+        e.setColor(Color.GREEN);
+        eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle(":bell: **Notification settings**");
+        e.setDescription(
                 """
                 ``!scorenotice <on/off>`` Toggle notifications for rank and PP display (default is off on Bancho)
                 ``!snipe <on/off>`` Toggle notifications when someone takes the 1st place from you
-                """, false);
-        e.addField("**Map settings**",
+                """);
+        e.setColor(Color.GREEN);
+        eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle(":rocket: **Map settings**");
+        e.setDescription(
                 """
                 ``!unsub <rank/unrank>`` Update maps not posted on Bancho to Loved (you can update NotSubmitted maps)
                 ``!update`` Fix maps that are not available on the ranking
-                """, false);
-        e.addField("**PP Calculation**",
+                """);
+        e.setColor(Color.GREEN);
+        eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle(":paintbrush: **PP Calculation**");
+        e.setDescription(
                 """
                 ``!with +<mod (optional)> <acc (optional)>`` Calculate and display PP under specified conditions
-                """, false);
-        e.addField("**List of Clan Commands**",
+                """);
+        e.setColor(Color.GREEN);
+        eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle(":notebook_with_decorative_cover: **List of Clan Commands**");
+        e.setDescription(
                 """
                 ``!clan help`` Display help for clan commands
                 ``!clan create <tag> <name>`` Create a new clan
@@ -419,12 +424,17 @@ public static List<EmbedBuilder> getRuleJAMessage() {
                 ``!clan pending`` Display players who have applied to join your clan
                 ``!clan accept <user ID>`` Accept the specified user ID to join the clan
                 ``!clan kick <user ID>`` Kick the specified player from your clan (available only to clan admins)
-                """, false);
-        e.addField("**List of Multiplayer Commands (Custom Commands Only)**",
-                "``!mp r <on/off>`` Rotate the clan host from top to bottom after each play", false);
-        e.setColor(Color.YELLOW);
-        e.setThumbnail("https://media.discordapp.net/attachments/944984741826932767/1253408271004467331/1865_20240206160538.png");
+                """);
+        e.setColor(Color.GREEN);
+        eb.add(e);
 
+        e = new EmbedBuilder();
+
+        e.setTitle(":video_game: **List of Multiplayer Commands (Custom Commands Only)**");
+        e.setDescription(
+                "``!mp r <on/off>`` Rotate the clan host from top to bottom after each play"
+        );
+        e.setColor(Color.GREEN);
         eb.add(e);
 
         return eb;
