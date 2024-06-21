@@ -245,23 +245,24 @@ public static List<EmbedBuilder> getRuleJAMessage() {
 
         e.setTitle("**Mamestagramへようこそ！**");
         e.setDescription("Mamestagramは、今までにない新しいosu!のプライベートサーバーです。Banchoにはない面白い機能を多く取り入れたサーバーを是非お楽しみください！");
-        e.addField("**プライベートサーバーとは**", """
+        e.addField(":pushpin: **プライベートサーバーとは**", """
                 プライベートサーバーは、osu!の非公式サーバーです。
-                Mamestagramでは、RelaxやAutoPilot、RandomなどのUnranked Modを遊ぶことができ、そのほかにも多くの独自機能が利用可能です。全てのGraveyardマップをLovedマップとして遊ぶことができ、未投稿の譜面をLovedに更新してランキングを争うこともできます。
+                \nMamestagramでは、RelaxやAutoPilot、RandomなどのUnranked Modを遊ぶことができ、そのほかにも多くの独自機能が利用可能です。
+                \n全てのGraveyardマップをLovedマップとして遊ぶことができ、未投稿の譜面をLovedに更新してランキングを争うこともできます。
                 \nいつもと違うosu!で、上位を目指してみませんか？
                 """, false);
-        e.addField("**サーバーアドレス**",
+        e.addField(":safety_pin: **サーバーアドレス**",
                 """
                       ```mamesosu.net```
                       接続方法は [こちら](https://web.mamesosu.net/documents#connection-en) をご覧ください。
                       """, false);
-        e.addField("**アカウント登録**", """
+        e.addField(":gem: **アカウント登録**", """
                 よく間違える方がいますが... **Banchoのアカウントでログインすることはできません!!**
-                [ここから](https://web.mamesosu.net/register)アカウントを登録してください。
-                \n※osu!から登録を行うことはできません!
+                \n[ここから](https://web.mamesosu.net/register)アカウントを登録してください。
+                \n**osu!から登録を行うことはできません!!**
                 """, false);
 
-        e.addField("**YouTube**", """
+        e.addField(":projector: **YouTube**", """
                 [Mamestagram YouTube](https://www.youtube.com/@Mamestagram)
                 """ , false);
 
@@ -274,24 +275,25 @@ public static List<EmbedBuilder> getRuleJAMessage() {
 
         e.setTitle("Welcome to Mamestagram!");
         e.setDescription("Mamestagram is a brand new private osu! server unlike any other. Enjoy many fun features that are not available on Bancho!");
-        e.addField("**What is a Private Server?**", """
+        e.addField(":pushpin: **What is a Private Server?**", """
                 A private server is an unofficial server for osu!.
-                On Mamestagram, you can play with Unranked Mods like Relax, AutoPilot, and Random, and there are many other unique features available. You can play all Graveyard maps as Loved maps, and you can also update unpublished maps to Loved and compete for rankings.
+                \nOn Mamestagram, you can play with Unranked Mods like Relax, AutoPilot, and Random, and there are many other unique features available. 
+                \nYou can play all Graveyard maps as Loved maps, and you can also update unpublished maps to Loved and compete for rankings.
                 \nWhy not aim for the top in a different kind of osu! experience?
                 """, false);
 
-        e.addField("**Server Address**",
+        e.addField(":safety_pin: **Server Address**",
                 """
                       ```mamesosu.net```
                       For connection instructions, please see [here](https://web.mamesosu.net/documents#connection-en).
                       """, false);
-        e.addField("**Account Registration**", """
+        e.addField(":gem: **Account Registration**", """
                 Many people make this mistake... **You cannot log in with your Bancho account!!**
-                Please register an account [here](https://web.mamesosu.net/register).
-                \n*You cannot register from osu!
+                \nPlease register an account [here](https://web.mamesosu.net/register).
+                \n**You cannot register from client!!**
                 """, false);
 
-        e.addField("**YouTube**", """
+        e.addField(":projector: **YouTube**", """
                 [Mamestagram YouTube](https://www.youtube.com/@Mamestagram)
                 """ , false);
 
@@ -328,7 +330,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
                       ``!leaderboard dan <on/off>`` リーダーボードの段位表示を切り替えます
                       ``!leaderboard sort <score/pp/default>`` リーダーボードの順位順を変更します
                 """, false);
-        e.addField("**ライバルの設定**", """
+        e.addField(":wrench: **ライバルの設定**", """
                       ``!rival <add/remove> <userid か プレイヤー名>`` あなたのライバルを設定します (そのライバルにスコアをスナイプされるとあなたに通知が送信されます)
                       ``!rival <msg> <メッセージ>`` あなたをライバルに設定したプレイヤーへのメッセージを変更します
                       """, false);
@@ -433,17 +435,17 @@ public static List<EmbedBuilder> getRuleJAMessage() {
         List<EmbedBuilder> eb = new ArrayList<>();
         EmbedBuilder e = new EmbedBuilder();
 
-        e.setTitle("**Dans**");
-        e.addField("**段位とは**", """
+        e.setTitle(":musical_keyboard: **Dans**");
+        e.addField(":pushpin: **段位とは**", """
                 [段位](https://web.mamesosu.net/documents#dans-en)は、プレイヤーの真の技量を測定することができる多くのゲームで採用されているシステムです。
-                Mamestagramでは、現在**全てのモード**で段位をプレイすることができ、段位を取得することで、他のプレイヤーとの技量を比較することができます。
+                \nMamestagramでは、現在**全てのモード**で段位をプレイすることができ、段位を取得することで、他のプレイヤーとの技量を比較することができます。
                 \n段位のランキングは、[リーダーボード](https://web.mamesosu.net/leaderboard/std/dans)やプロフィールで確認することができます。
                 """, false);
-        e.addField("**段位の取得方法**", """
+        e.addField(":information_source: **段位の取得方法**", """
                 段位を取得するには、[段位マップ](https://web.mamesosu.net/documents#dans-en)をプレイする必要があります。
-                段位マップは、段位を取得するための特別な譜面で、段位マップをプレイすることで段位を取得することができます。
+                \n段位マップは、段位を取得するための特別な譜面で、段位マップをプレイすることで段位を取得することができます。
                 """, false);
-        e.addField("**譜面のダウンロード**", """
+        e.addField("<:download:1104222730863263777> **譜面のダウンロード**", """
                 [全てのモードの段位をダウンロードする](https://mega.nz/file/MTcFXKiS#osaecmefYp5BnGRBjeYJu3dAR2aOKKUkTo8BOhJC0XU)
                 <:osu:1100702517119168562> [osu!](https://mega.nz/file/QKsHlLhS#xZfttKbJQqt-2mvT0uD9sIKGJH4VQKf41zXIU_JW81U)
                 <:taiko:1100702510152429588> [Taiko](https://mega.nz/file/1X1FDDqS#QLP5ZjbH8k1FN4IqYJbH_Agq_onXLd66r8UiYxKUDGw)
@@ -458,17 +460,17 @@ public static List<EmbedBuilder> getRuleJAMessage() {
 
         e = new EmbedBuilder();
 
-        e.setTitle("**Dans**");
-        e.addField("**What are Dans?**", """
+        e.setTitle(":musical_keyboard: **Dans**");
+        e.addField(":pushpin: **What are Dans?**", """
             [Dans](https://web.mamesosu.net/documents#dans-en) is a system adopted in many games to assess a player's skill level.
-            In Mamestagram, you can play for **Dans in all modes**, allowing you to compare your skill level with other players by achieving Dans.
+            \nIn Mamestagram, you can play for **Dans in all modes**, allowing you to compare your skill level with other players by achieving Dans.
             \nDans rankings can be viewed on the [leaderboards](https://web.mamesosu.net/leaderboard/std/dans) and profiles.
             """, false);
-                    e.addField("**How to Obtain Dans**", """
-            To obtain Dans, you need to play [Dans maps](https://web.mamesosu.net/documents#dans-en). 
-            Dans maps are special beatmaps designed for obtaining Dans ranks.
+                    e.addField(":information_source: **How to Obtain Dans**", """
+            To obtain Dans, you need to play [Dans maps](https://web.mamesosu.net/documents#dans-en).
+            \nDans maps are special beatmaps designed for obtaining Dans ranks.
             """, false);
-                    e.addField("**Map Downloads**", """
+                    e.addField("<:download:1104222730863263777> **Map Downloads**", """
             [Download Dans for all modes](https://mega.nz/file/MTcFXKiS#osaecmefYp5BnGRBjeYJu3dAR2aOKKUkTo8BOhJC0XU)
             <:osu:1100702517119168562> [osu!](https://mega.nz/file/QKsHlLhS#xZfttKbJQqt-2mvT0uD9sIKGJH4VQKf41zXIU_JW81U)
             <:taiko:1100702510152429588> [Taiko](https://mega.nz/file/1X1FDDqS#QLP5ZjbH8k1FN4IqYJbH_Agq_onXLd66r8UiYxKUDGw)
@@ -492,14 +494,14 @@ public static List<EmbedBuilder> getRuleJAMessage() {
 
         e.setTitle("**Donate**");
         e.addField("**知っていますか？**", """
-                1. 私たちは学生です! 毎月多額のサーバーの費用をポケットマネーから出しています。サーバーの維持には、多くの費用がかかります。あなたの寄付がサーバーの維持を助けることができます。
-                2. Mamestagramのウェブサイトでは、一切広告を表示していません。
-                3. Mamestagramで使用しているハードウェアは高性能なものですが、ユーザー数や機能が増えるにつれ、さらにハイエンドなものが必要となってきます。あなたの寄付がサーバーの発展を助けることができます。
+                * 私たちは学生です! 毎月多額のサーバーの費用をポケットマネーから出しています。サーバーの維持には、多くの費用がかかります。あなたの寄付がサーバーの維持を助けることができます。
+                * Mamestagramのウェブサイトでは、一切広告を表示していません。
+                * Mamestagramで使用しているハードウェアは高性能なものですが、ユーザー数や機能が増えるにつれ、さらにハイエンドなものが必要となってきます。あなたの寄付がサーバーの発展を助けることができます。
                 """, false);
         e.addField("**寄付方法**", """
                 Mamestagramでは[Kofi](https://ko-fi.com/mames1)と呼ばれる寄付サイト、またはPayPayにて寄付を募っています。
-                Kofiはアカウント登録なしで簡単に寄付を行うことが可能です。
-                メッセージにあなたのユーザー名を記載していくことで、プロフィールページのサポーターバッジとSupporterロールを受け取ることができます!
+                \nKofiはアカウント登録なしで簡単に寄付を行うことできるサイトです。
+                \nメッセージにあなたのユーザー名を記載していくことで、プロフィールページのサポーターバッジとSupporterロールを受け取ることができます!
                 \nPayPayで支払う場合は https://discord.com/channels/944248031136587796/1171728223407710208 でチケットを作成し、支払いの旨を伝えてください。
                 mames1がQRコードを送信します。
                 """, false);
@@ -537,6 +539,35 @@ public static List<EmbedBuilder> getRuleJAMessage() {
         e.setImage("https://cdn.discordapp.com/attachments/945876677358129184/1253374142544089219/image.png");
         e.setThumbnail("https://media.discordapp.net/attachments/944984741826932767/1253408271004467331/1865_20240206160538.png");
         eb.add(e);
+
+        return eb;
+    }
+
+    public static EmbedBuilder getMapRequestMessage() {
+
+        EmbedBuilder eb = new EmbedBuilder();
+
+        eb.setTitle("**Map Status Change Request**");
+        eb.addField(":white_check_mark: **Changeable status**", """
+                <:ranked:1143570271974989914> **Ranked**
+                <:loved:1100846331418914857> **Loved**
+                """, false);
+        eb.addField(":pencil: How to Request", """
+                * Click the button for the type of map.
+                * Enter the map's setid in the form.
+                * Submit the form to complete.
+                """, true);
+        eb.addField(":warning: **Note**", """
+                * Maps that have not been played on the server cannot be requested.
+                * Maps with an OD of 0 cannot be requested.
+                * Maps that deviate significantly from Bancho's Ranked criteria, such as Vibro, cannot be requested.
+                """, true);
+        eb.addField("**:information_source: About Set ID**", """
+                The set ID is the first number in the beatmap's URL.
+                Example: In ``https://osu.ppy.sh/beatmapsets/1234567#osu/7654321``, the set ID is ``1234567``.
+                """, false);
+
+        eb.setColor(Color.CYAN);
 
         return eb;
     }
