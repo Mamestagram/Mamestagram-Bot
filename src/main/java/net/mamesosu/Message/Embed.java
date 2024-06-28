@@ -324,24 +324,24 @@ public static List<EmbedBuilder> getRuleJAMessage() {
         e.setTitle("**Mamestagram 's command list**");
         e.setDescription("By sending the following command to the bot, **Momiji**, in the server, you can enjoy playing Mamestagram more comfortably!");
 
-        e.setTitle(":earth_asia: **Change your profile settings**");
+        e.setTitle(":earth_asia: **Profile settings**");
         e.setDescription(
                 """
                 ``!changecountry`` Change the country of your account
                 ``!changename <name>`` Change your name"""
         );
-        e.setColor(Color.GREEN);
+        e.setColor(Color.white);
         eb.add(e);
 
         e = new EmbedBuilder();
 
-        e.setTitle(":musical_keyboard: **Change your Dan settings**");
+        e.setTitle(":musical_keyboard: **Dan settings**");
         e.setDescription(
                 """
-                ``!danprefix <edit/list> <Dan ID>`` Change the type of Dan displayed on the leaderboard (available only for osu!mania)
-                ``!danprofile <on/off>`` Switch to a mode for serious Dan players. You can play all maps with 0PP.
+                ``!dantitle <edit/list> <Dan ID>`` Change the type of Dan displayed on the leaderboard (available only for osu!mania)
+                ``!danprofile <on/off>`` Switch to a mode for serious Dan players. You can play all maps with 0PP
                 """);
-        e.setColor(Color.GREEN);
+        e.setColor(Color.red);
         eb.add(e);
 
         e = new EmbedBuilder();
@@ -352,7 +352,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
                 ``!friends`` Display your friends list
                 ``!goals`` Set goals for maps or any mode (progress is shown after each play)
                 """);
-        e.setColor(Color.GREEN);
+        e.setColor(Color.magenta);
         eb.add(e);
 
         e = new EmbedBuilder();
@@ -363,7 +363,18 @@ public static List<EmbedBuilder> getRuleJAMessage() {
                 ``!leaderboard dan <on/off>`` Toggle Dan display on the leaderboard
                 ``!leaderboard sort <score/pp/default>`` Change the leaderboard ranking order
                 """);
-        e.setColor(Color.GREEN);
+        e.setColor(Color.pink);
+        eb.add(e);
+
+        e = new EmbedBuilder();
+
+        e.setTitle(":file_folder:  **Submission setting**");
+        e.setDescription(
+                """
+                ``!submit <on/off>`` Toggle the submission of scores to the leaderboard
+                """
+        );
+        e.setColor(Color.cyan);
         eb.add(e);
 
         e = new EmbedBuilder();
@@ -374,7 +385,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
                 ``!rival <add/remove> <userid or player name>`` Set your rival (you will be notified if your score is sniped by the rival)
                 ``!rival <msg> <message>`` Change the message to players who have set you as their rival
                 """);
-        e.setColor(Color.GREEN);
+        e.setColor(Color.blue);
         eb.add(e);
 
         e = new EmbedBuilder();
@@ -396,7 +407,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
                 ``!unsub <rank/unrank>`` Update maps not posted on Bancho to Loved (you can update NotSubmitted maps)
                 ``!update`` Fix maps that are not available on the ranking
                 """);
-        e.setColor(Color.GREEN);
+        e.setColor(Color.yellow);
         eb.add(e);
 
         e = new EmbedBuilder();
@@ -406,7 +417,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
                 """
                 ``!with +<mod (optional)> <acc (optional)>`` Calculate and display PP under specified conditions
                 """);
-        e.setColor(Color.GREEN);
+        e.setColor(Color.orange);
         eb.add(e);
 
         e = new EmbedBuilder();
@@ -425,16 +436,19 @@ public static List<EmbedBuilder> getRuleJAMessage() {
                 ``!clan accept <user ID>`` Accept the specified user ID to join the clan
                 ``!clan kick <user ID>`` Kick the specified player from your clan (available only to clan admins)
                 """);
-        e.setColor(Color.GREEN);
+        e.setColor(Color.PINK);
         eb.add(e);
 
         e = new EmbedBuilder();
 
         e.setTitle(":video_game: **List of Multiplayer Commands (Custom Commands Only)**");
         e.setDescription(
-                "``!mp r <on/off>`` Rotate the clan host from top to bottom after each play"
+                """
+                ``!mp r <enable/disable>`` Rotate the clan host from top to bottom after each play
+                ``!mp invite <message>``Sends an invitation notification to Discord
+        """
         );
-        e.setColor(Color.GREEN);
+        e.setColor(Color.white);
         eb.add(e);
 
         return eb;
