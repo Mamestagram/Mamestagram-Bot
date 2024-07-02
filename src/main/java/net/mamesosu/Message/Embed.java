@@ -445,7 +445,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
         e.setDescription(
                 """
                 ``!mp r <enable/disable>`` Rotate the clan host from top to bottom after each play
-                ``!mp invite <message>``Sends an invitation notification to Discord
+                ``!mp invite <message>`` Sends an invitation notification to Discord
         """
         );
         e.setColor(Color.white);
