@@ -339,7 +339,7 @@ public static List<EmbedBuilder> getRuleJAMessage() {
         e.setDescription(
                 """
                 ``!dantitle <edit/list> <Dan ID>`` Change the type of Dan displayed on the leaderboard (available only for osu!mania)
-                ``!nopp <on/off>`` Switch to 0pp mode! (available only for osu!mania/catch the beat)
+                ``!nopp <on/off>`` Switch to 0pp mode! (available only for vn!taiko/ctb/mania)
                 """);
         e.setColor(Color.red);
         eb.add(e);
